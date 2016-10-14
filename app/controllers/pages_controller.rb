@@ -15,5 +15,12 @@ class PagesController < ApplicationController
 
   #back-end code for pages/profile
   def profile
+    #grab the username for the URL as :id
+    if(User.find_by_username(params[:id]))
+      @username = params[:id]
+    else
+      #redirect to 484 (root for now)
+      redirect_to root_path, :notice=> "Oops: User doesn't exist"
+    end
   end
 end
