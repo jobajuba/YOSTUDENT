@@ -22,5 +22,6 @@ class PagesController < ApplicationController
       #redirect to 484 (root for now)
       redirect_to root_path, :notice=> "Oops: User doesn't exist"
     end
+    @posts = Post.all
   end
 end

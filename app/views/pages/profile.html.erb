@@ -19,12 +19,15 @@
         </div>
     </div>
     
+    
     <div class="col-xs-6">
-        <div class="panel panel-default">    
-            <div class="panel-body">
-               <p>Activity</p>
+        <% for @p in @posts %> <!-- Calls every post in the database, -->
+            <div class="panel panel-default">    
+                <div class="panel-body">
+                   <p><%= @p.content %></p>
+                </div>
             </div>
-        </div>
+        <% end %>
     </div>
     
     <div class="col-xs-3">
