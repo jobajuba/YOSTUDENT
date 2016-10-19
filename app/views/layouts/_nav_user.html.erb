@@ -16,9 +16,18 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/home">Dashboard<span class="sr-only">(current)</span></a></li>
         <li><a href="/explore">Explore</a></li>
-       
+
+
+
+
+
+    <li><a href="/user/<%= current_user.username %>" class="profile-link_to" role="button">Image + mouse over = username </a></li>
+        
+        
+        
+        
         <li class="dropdown">
-          <a href="<%= current_user.username%>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
+          <a href="profile" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hub<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Inbox</a></li>
              <li role="separator" class="divider"></li>
@@ -31,6 +40,10 @@
             <li><a href="#"></a></li>
           </ul>
         </li>
+        
+        
+        
+        
       </ul>
       
      
