@@ -26,6 +26,6 @@ class PagesController < ApplicationController
     end
     
     @posts = Post.all.where("user_id =?", User.find_by_username(params[:id]).id)
-    
+    @newPost = Post.new
   end
 end
