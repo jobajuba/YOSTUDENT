@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -8,30 +8,35 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">YOSTUDENT</a>
+        <img class="navbar-brand" src="/YOStudent Icon.png">
+      </div>
+      
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" style="width:560px; height: 20ps; color: black; font-size: 15pt; background-color:white;" class="form-control" placeholder="Search Yostudent">
+        </div>
+      </form>
     </div>
-
-        <ul class="nav navbar-nav navbar-right">
-        
-          <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" style="width:500px; background-color:white;" width= "8" class="form-control" placeholder="Search Yostudent">
-          </div>
-          
-            <div class="btn-group btn-group-md" role="group" aria-label="...">
-              <button type="submit" class="btn btn-default">
-               <%= link_to('Sign in', new_user_session_path) %>
-              </button>
-            </div>
-           
-            <div class="btn-group btn-group-md" role="group" aria-label="...">
-              <button type="submit" class="btn btn-default">
-               <%= link_to('Sign up', new_user_registration_path) %>
-              </button>
-            </div>
-  
-          </form>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    
+    
+    
+    <ul class="nav navbar-nav navbar-right container-fluid">
+     
+      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
+        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+          <%= link_to('Sign in', new_user_session_path) %>
+        </div>
+      </li>
+      
+      <li>  </li>
+      
+      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
+        <div class="btn-group btn-group-sm" role="group" aria-label="...">
+          <%= link_to('Sign up', new_user_registration_path) %>
+        </div>
+      </li>  
+      
+    </ul>
+    
+  </div>
 </nav>
