@@ -15,14 +15,16 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 .navbar {
-    background-color: rgba(300, 200, 100, 1);
+    background-color: rgba(255, 141, 0, 0.8);
 }
 
 
 body{
-    background-color:  rgba(238,100,54,0.10);
+    background-color:  rgba(0,65,124,0.1);
 }
 
 input.form-control {

@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #Devise gem for authentication and user accounts.
 gem 'devise'
+#Font Awesome
+gem 'font-awesome-sass', '~> 4.7.0'
 #for Twitter UI components inc. navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
