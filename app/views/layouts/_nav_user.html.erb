@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <img class="navbar-brand" src="/YOStudent Icon.png">
+        <img class="navbar-brand" src="/icon2.png">
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,18 +18,19 @@
          <li>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" style="width:500px; background-color:white;" class="form-control" bordercolor="orange" placeholder="Search Yostudent">
+              <input type="text" style="width:300px; background-color:white;" class="form-control" bordercolor="orange" placeholder="Search Yostudent">
             </div>
           </form>
         </li>
+        <li class=""><a href="/home" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only">(current)</span></span></i></a></li>
+        <li class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true"></i></i></span></i></a></li>
       </ul>
      
       
-      <ul class="nav navbar-nav navbar-right">
-        
-        <li class=""><a href="/home"><span STYLE="color: #ffffff; font-size: 20pt" ><i class="fa fa-globe" aria-hidden="true"></i></span></a></li>
-        <li><a href="/explore"<i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true"></i></span></i></a></li>
-        <li class="dropdown">
+      <ul class="nav navbar-nav navbar-right nav-tabs">
+
+       
+        <li class="dropdown active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-th" aria-hidden="true" ></i></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Inbox</a></li>
@@ -50,8 +51,17 @@
               <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
             </ul>
         </li>
-        <li><a href=""<i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-user-plus" aria-hidden="true"></i></span></i></a></li>
-     
+       
+         <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-user-plus" aria-hidden="true" ></i></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Begin new class</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Resume Class</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Hub</a></li>
+              </ul>
+        </li>  
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
