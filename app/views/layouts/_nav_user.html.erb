@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-inverse navbar-default">
+<nav class="navbar navbar-dark bg-inverse navbar-default nav-justified">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,34 +14,42 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-      <ul class="nav navbar-nav navbar-left">
+      <ul class="nav navbar-nav navbar-left ">
          <li>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" style="width:300px; background-color:white;" class="form-control" bordercolor="orange" placeholder="Search Yostudent">
+              <input type="text" style="width:200px; background-color:white;" class="form-control" bordercolor="orange" placeholder="Search Yostudent">
             </div>
           </form>
         </li>
-        <li class=""><a href="/home" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only">(current)</span></span></i></a></li>
-        <li class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true"></i></i></span></i></a></li>
+        <li role="presentation" class=""><a href="/home" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only">(current)</span></span></i></a></li>
+        <li role="presentation" class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true"></i></i></span></i></a></li>
+        <li role="presentation" class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></span></i></a></li>
+        <li role="presentation" class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></i></span></i></a></li>
+        <li role="presentation" class=""><a href="/explore" data-toggle="tab"><i class="material-icons"><span STYLE="color: #ffffff; font-size: 20pt"><i class="fa fa-stumbleupon" aria-hidden="true"></i></span></i></a></li>
       </ul>
      
       
       <ul class="nav navbar-nav navbar-right nav-tabs">
 
        
+       
+         <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-user-plus" aria-hidden="true" ></i></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Begin new class</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Resume Class</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Collaborate</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Hub</a></li>
+              </ul>
+          </li>  
+          
         <li class="dropdown active">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-th" aria-hidden="true" ></i></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-cog" aria-hidden="true"></i></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Inbox</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Notifications</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Likes</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Collaborate</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#"></a></li>
               <li><a href="#">Help</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Activity Log</a></li>
@@ -51,17 +59,7 @@
               <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
             </ul>
         </li>
-       
-         <li class="dropdown active">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span STYLE="color: #0c5393; font-size: 22pt"><i class="fa fa-user-plus" aria-hidden="true" ></i></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Begin new class</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Resume Class</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Hub</a></li>
-              </ul>
-        </li>  
+          
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
