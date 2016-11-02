@@ -20,6 +20,21 @@
 
 .navbar {
     background-color: rgba(255, 141, 0, 0.8);
+ 
+}
+
+.navbar-default .navbar-brand {
+    
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+    color: #0c5393;
+    background-color: transparent;
+}
+
+.fa:hover{
+    color: #0c5393;
 }
 
 
@@ -33,8 +48,15 @@ input.form-control {
     
 }
 
-.navbar-brand {
-    position: absolute;
-    
-    
+.magic_brand {
+    font-weight: bold;
+}
+
+.dropdown .dropdown-toggle {
+    border: 1px solid white;
+}
+
+.dropdown .dropdown-toggle:hover {
+    background-color: #0c5393;
+    color:#0c5393;
 }
