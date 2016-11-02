@@ -20,17 +20,18 @@
 
 .navbar {
     background-color: rgba(255, 141, 0, 0.8);
- 
+    width: 110%;
+    border: 0px;
 }
 
 .navbar-default .navbar-brand {
-    
+    color: #ffffff;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
     color: #0c5393;
-    background-color: transparent;
+    background-color:transparent;
 }
 
 .fa:hover{
@@ -52,8 +53,9 @@ input.form-control {
     font-weight: bold;
 }
 
-.dropdown .dropdown-toggle {
-    border: 1px solid white;
+.dropdown .dropdown-toggle:hover {
+    border: 0.1px solid white;
+    color: #f2fb69;
 }
 
 .dropdown .dropdown-toggle:hover {
