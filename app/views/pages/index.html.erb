@@ -1,13 +1,23 @@
 <% if !user_signed_in? # if the user is not signed in, render this %>
     <style>
-        html{
+        body {
             background: url("/") no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        h1 {
+            color: #0c5393;
+        }
+        
     </style>
+    
+    <div class="this-welcome container">
+        <h1>YOSTUDENT.</h1>
+    </div>
+    
 <% else #if the user is signed in, render the following HTML %>
 
 Signed in
