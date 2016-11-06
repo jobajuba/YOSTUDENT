@@ -34,12 +34,47 @@
     background-color:transparent;
 }
 
-.fa:hover{
+.fa:hover, .dropdown-toggle {
     color: #0c5393;
+}
+
+.button .glyphicon {
+	margin-right: 0px;
+	vertical-align: middle;
+}
+.button .fa {
+	margin-right: 0px;
+	vertical-align: middle;
+}
+
+.new_post_label_text {
+    font-size: 70%;
+}
+
+.btn-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.button.material-icon .glyphicon {
+	margin-right: 0;
+}
+
+.button.material-icon .fa {
+	margin-right: 0;
 }
 
 .fa-grav {
     color: #ff1919;
+}
+
+.fa-user {
+    color:	#f2fb69;
+}
+
+.fa:empty {
+    width: 1em; 
+    
 }
 
 .glyphicon-cog {
@@ -53,6 +88,7 @@
 .fa-user-plus {
     color: #009fff;
 }
+
 
 body{
     background-color:  rgba(0,65,124,0.1);
@@ -70,7 +106,7 @@ input.form-control {
 
 .dropdown .dropdown-toggle:hover {
     border: 0.1px solid white;
-    color: #f2fb69;
+  
 }
 
 .dropdown .dropdown-toggle:hover {
@@ -84,4 +120,8 @@ input.form-control {
 
 .panel .panel-body{
     background: transparent;
+}
+
+.panel-body {
+    width: 100%;
 }

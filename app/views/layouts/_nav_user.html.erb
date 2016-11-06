@@ -21,27 +21,48 @@
             </div>
           </form>
         </li>
-        <li role="presentation" class="button"><a href="/home"><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i><span class="sr-only">(current)</span></span></i></a></li>
+        <li role="presentation" class="button"><a href="/home"><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i><span class="sr-only">(current)</span></span></i></li></a></li>
         <li role="presentation" class="button"><a href="/explore"><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Explore"></i></i></span></i></a></li>
-        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
         <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Notifications"></i></i></span></i></a></li>
+        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
         <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-stumbleupon" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Stumble Upon"></i></span></i></a></li>
+           
+
+
+
+                 
+        
+        
+        
+        
+       
+        
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-         
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ffffff; font-size: 18pt"><span class="label label-info"><i class="fa fa-bars" aria-hidden="true"><span class="caret"></span></i></span></a>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ffffff; font-size: 15pt"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Help</a></li>
+                  
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Activity Log</a></li>
-                <li role="separator" class="divider"></li>
-                <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
-                <li role="separator" class="divider"></li>
-                <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
+                
+                
               </ul>
-          </li>
+        </li>
+         
+         
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Help</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Activity Log</a></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
+            </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
