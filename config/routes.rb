@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'home' => 'pages#home'
   get 'explore' => 'pages#explore'
   get '/user/:id' => 'pages#profile'
+  get 'grav' => 'pages#grav'
+  
   
   
 

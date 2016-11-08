@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'puma'
+#Actioncontroller: Live
+gem 'sinatra'
 #Devise gem for authentication and user accounts.
 gem 'devise'
 #Font Awesome

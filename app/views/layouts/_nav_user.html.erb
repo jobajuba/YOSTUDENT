@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href=""><span class="magic_brand" style="font-size: 20pt">YOSTUDENT</span></a>
+        <a class="navbar-brand" href=""><span class="magic_brand" style="font-size: 15pt">YOSTUDENT.</span></a>
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,11 +21,11 @@
             </div>
           </form>
         </li>
-        <li role="presentation" class="button"><a href="/home"><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i><span class="sr-only">(current)</span></span></i></li></a></li>
-        <li role="presentation" class="button"><a href="/explore"><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-compass" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Explore"></i></i></span></i></a></li>
-        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Notifications"></i></i></span></i></a></li>
-        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
-        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 20pt"><i class="fa fa-stumbleupon" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Stumble Upon"></i></span></i></a></li>
+        <li role="presentation" class="button"><a href="/home"><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i><span class="sr-only">(current)</span></span></i></li></a></li>
+        <li role="presentation" class="button"><a href="/explore"><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-compass" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Explore"></i></i></span></i></a></li>
+        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Notifications"></i></i></span></i></a></li>
+        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
+        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-stumbleupon" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Stumble Upon"></i></span></i></a></li>
            
 
 
@@ -40,29 +40,40 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ffffff; font-size: 15pt"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-              <ul class="dropdown-menu">
+        
+        <li class="active">
+          <a href="/grav">
+            <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Hub">
+              <i class="fa fa-grav" aria-hidden="true" ></i>
+            </span>
+          </a>
+        </li>
+        
+        <li class="active">
+            <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span style="color: #ffffff; font-size: 17pt">
+                <span class="glyphicon glyphicon-user" aria-hidden="true">
                   
+                </span>
+                <span class="caret"></span>
+              </span>
+            </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
                 <li role="separator" class="divider"></li>
                 
+                <li><a href="#">Messaging</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Activity Log</a></li>
+                <li role="separator" class="divider"></li>
                 
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+                <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
+                <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
               </ul>
         </li>
-         
-         
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Help</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Activity Log</a></li>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
-            </ul>
-        </li>
+        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

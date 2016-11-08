@@ -24,6 +24,12 @@
     border: 0px;
 }
 
+.navbar-guest {
+    background: transparent;
+    width: 110%;
+    border: 0px;
+}
+
 .navbar-default .navbar-brand {
     color: #ffffff;
 }
@@ -81,6 +87,10 @@
     color: #000000;
 }
 
+.glyphicon-user {
+    color: #009fff;
+}
+
 .fa-folder-open {
     color: #198c19;
 }
@@ -102,6 +112,11 @@ input.form-control {
 
 .magic_brand {
     font-weight: bold;
+    color: #ffffff;
+}
+
+.magic_brand:hover{
+    color: #0c5393;
 }
 
 .dropdown .dropdown-toggle:hover {

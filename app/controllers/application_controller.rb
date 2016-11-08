@@ -21,4 +21,8 @@ class ApplicationController < ActionController::Base
    # forgery_protection_strategy.new(self).handle_unverified_request
   #end
   
+  
+  
+  #null_session
+
 end
