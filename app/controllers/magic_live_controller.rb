@@ -14,6 +14,5 @@ class Magic_LiveController < ApplicationController
       response.stream.close
     end
     
-    def 
     
 end

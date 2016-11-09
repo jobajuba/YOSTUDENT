@@ -1,14 +1,14 @@
 <div class="row">
     <!-- Left Panel 1 begins -->
     <div class="col-xs-3">
-        <div class="panel panel-default">
-            <div class="panel-body">
+        <div class="panel panel-info">
+            <div class="panel-body panel-margin-container">
                <p>stats</p>
             </div>
         </div>
         <!--Left Panel 2 begins -->
-        <div class="panel panel-default" >   
-            <div class="panel-body">
+        <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
                 <p>Endorsed</p>
             </div>
          </div>
@@ -17,24 +17,39 @@
     
     <!-- Center Panel begins here, -->
     <div class="col-xs-6">
-        <% for @p in @posts %>
-            <div class="panel panel-default">    
-                <div class="panel-body">
-                   
-                   <!-- Thumbnail inside center panel begins here -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="thumbnail">
-                                <img src="<%= @p.content %>" alt="...">
-                                    <div class="caption">
-                                        <h3>Shared content is shown here</h3>
+        <%= render '/components/post_form' %>
+        
+                <% for @p in @posts %>
+                <div class="panel panel-info">    
+                    <div class="panel-body">
+
+                       <!-- Thumbnail inside center panel begins here -->
+                        <div class="row">
+                            <div class="col-md-12 post-margin-container">
+                                <div class="thumbnail panel-margin">
+                                
+                                    <p><%= @p.content %></p>
+                                        
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a href="#"><span style="color: #ff8d00; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Contributors"><i class="fa fa-users" aria-hidden="true"></i> <span class="badge">14</span></span></a>
                                     </div>
+                                    
+                                        
+                                    <div class="col-xs-2 col-xs-offset-7">
+                                        <ul class="list-group">
+                                            
+                                        </ul> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
-            </div>
-        <% end %>
+            <% end %>
     </div>
 
  
@@ -45,8 +60,8 @@
          
         
         <!-- Panel 2 connects, -->
-        <div class="panel panel-defaul  bb nb n    " >   
-            <div class="panel-body">
+        <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
             
                     <ol class="breadcrumb">
                         <li>
@@ -71,13 +86,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="active">
-                            <a href="#">
-                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Affiliates">
-                                   <i class="fa fa-users" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </li>
+                        
                     
               
                  <hr>

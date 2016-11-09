@@ -40,15 +40,6 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
-        <li class="active">
-          <a href="/grav">
-            <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Hub">
-              <i class="fa fa-grav" aria-hidden="true" ></i>
-            </span>
-          </a>
-        </li>
-        
         <li class="active">
             <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <span style="color: #ffffff; font-size: 17pt">
@@ -59,7 +50,7 @@
               </span>
             </a>
               <ul class="dropdown-menu">
-                <li><a href="#">Profile</a></li>
+                <li><a href="/user/<%= current_user.username %>">Profile</a></li>
                 <li role="separator" class="divider"></li>
                 
                 <li><a href="#">Messaging</a></li>
@@ -73,6 +64,16 @@
                 <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
               </ul>
         </li>
+        
+        <li class="active">
+          <a href="/grav">
+            <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Hub">
+              <i class="fa fa-grav" aria-hidden="true" ></i>
+            </span>
+          </a>
+        </li>
+        
+        
         
       </ul>
     </div><!-- /.navbar-collapse -->
