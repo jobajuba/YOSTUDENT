@@ -17,127 +17,55 @@
     
     <!-- Center Panel begins here, -->
     <div class="col-xs-6">
-        <%= render '/components/post_form' %>
-        
+        <div class="row">
+            <%= render '/components/post_form' %><br>
                 <% for @p in @posts %>
-                <div class="panel panel-info">    
-                    <div class="panel-body">
-
-                       <!-- Thumbnail inside center panel begins here -->
-                        <div class="row">
-                            <div class="col-md-12 post-margin-container">
-                                <div class="thumbnail panel-margin">
-                                
-                                    <p><%= @p.content %></p>
-                                        
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <a href="#"><span style="color: #ff8d00; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Contributors"><i class="fa fa-users" aria-hidden="true"></i> <span class="badge">14</span></span></a>
-                                    </div>
-                                    
-                                        
-                                    <div class="col-xs-2 col-xs-offset-7">
-                                        <ul class="list-group">
-                                            
-                                        </ul> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="thumbnail panel-info">
                         
+                                <p><%= @p.content %></p>
+                         
+                       
+                        <div class="caption">
+                            <h4>Description</h4>
+                            <p>...</p>
+                            <p class="col-sm-offset-9">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                                <span class="glyphicon glyphicon-fire"></span>
+                            </p>
+                        </div>
                     </div>
-                </div>
             <% end %>
+        </div>
     </div>
-
+        
  
      <!-- Right button group Panel 1 begins here -->
     <div class="col-xs-3">
-        
-        
-         
-        
-        <!-- Panel 2 connects, -->
-        <div class="panel panel-info" >   
+        <div class="panel panel-info">
             <div class="panel-body panel-margin-container">
-            
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="#">
-                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Active projects">
-                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="#">
-                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Begin new project">
-                                    <i class="fa fa-user-plus" aria-hidden="true" ></i>
-                                </span>
-                            </a>
-                        </li>
-                        
-                        <li class="active">
-                            <a href="/grav">
-                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Hub">
-                                    <i class="fa fa-grav" aria-hidden="true" ></i>
-                                </span>
-                            </a>
-                        </li>
-                        
-                    
-              
-                 <hr>
-                
-                    
-   
-                    	<li class="active">
-                    		<a href="#">
-                    			<span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
-                    				<i class="fa fa-headphones" aria-hidden="true">
-                    				   
-                    				</i>
-                                                
-                    			</span>
-                    		</a>
-                    	</li>
-                    	
-                    	<li class="active">
-                    		<a href="#">
-                    			<span style="color: #70b0c3; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="text">
-                    					<i class="fa fa-file-text-o" aria-hidden="true">
-                    					 
-                    					</i>
-                                               
-                    			</span>
-                    		</a>
-                    	</li>
-                    	<li class="active">
-                    		<a href="#">
-                    			<span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
-                    				<i class="fa fa-video-camera" aria-hidden="true">
-                    				   
-                    				</i>
-                                                
-                    			</span>
-                    		</a>
-                    	</li>
-                    	
-                    	<li class="active">
-                    		<a href="#">
-                    		    <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                    				<i class="fa fa-camera-retro" aria-hidden="true">
-                    				 
-                    				</i>
-                    			</span>
-                    		</a>
-                    	</li>
-                    </ol>
-
+               <p>Recomended User</p>
             </div>
         </div>
+        <!--Left Panel 2 begins -->
+        <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
+                <p>Recomended Projects</p>
+            </div>
+         </div>
+         
+         <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
+                <p>Recomended Sponsors</p>
+            </div>
+         </div>
+         
+         <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
+                <p>Active Tutors</p>
+            </div>
+         </div>
     </div>
 </div>
 

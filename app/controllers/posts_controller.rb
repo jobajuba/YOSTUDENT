@@ -7,18 +7,21 @@ class PostsController < ApplicationController
     def create 
         @post = Post.new(post_params)
         @post.user_id = current_user.id
-        respond_to do |f|
+        respond_to do |format|
             if (@post.save)
-                f.html {redirect_to "", notice: "Post created!"}
+                format.html {redirect_to "", notice: "Post created!"}
             else
-                f.html {redirect_to "", notice: "Error: Post Not Saved."}
+                format.html {redirect_to "", notice: "Error: Post Not Saved."}
             end
         end
         
     end 
     
+    private
+    
     def post_params #
-       params.require(:post).permit(:user_id, :content) 
+       params.require(:post).permit(:user_id, :title, :content, :description) 
     end
+    
     
 end

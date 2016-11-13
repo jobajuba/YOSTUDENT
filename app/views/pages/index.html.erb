@@ -14,14 +14,11 @@
         }
         
         h1 {
-            color: #0c5393;
-            
+            color: rgba(255, 141, 0, 0.8);
+            font-weight: bold;
         }
         
-        .container-index {
-            margin-right: 15%;
-            margin-LEFT: 25%;
-        }
+       
         
         .this-sign-in {
             margin-top:15%;
@@ -31,19 +28,61 @@
             width:500px;
             height:250px;
         }
+        
+        .text {
+            color: white;
+            font-weight:300;
+            font-size: 150%;
+        }
+        
+        .footer-links{
+            text-align: center;
+            color: white;
+            margin-top: 30%;
+            font-size: 75%;
+        }
+        
+        .log-in {
+            float:right;
+            width:600px;
+            height:350px;
+            margin-top: 7.5%;
+        }
+        
+         .container-index {
+            margin-right: 10%;
+            margin-LEFT: 20%;
+        }
+        .log-in-form {
+            margin: 5px;
+        }
     </style>
     
    
     
     
-    <div class="this-sign-in panel">
-        <div class="this-welcome container-index">
+    <div class="container-index row">
+        <div class="col-sm-6">
             <h1>YOSTUDENT.</h1>
+            <p class="text">
+                Welcome text
+            </p>
         </div>
     </div>
     
+    <div class="col-sm-6 col-md-offset-3">
+        <div class="panel log-in">
+            <div class="panel-body panel-margin-container">
+               <p>Log in</p>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    
 <% else #if the user is signed in, render the following HTML %>
 
-Signed in
+    <script>document.location = "/home"</script>
 
 <% end %>

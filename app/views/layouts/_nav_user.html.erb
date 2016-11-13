@@ -13,7 +13,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-left">
+      <ul class="nav navbar-nav navbar-left user-icon">
          <li>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
@@ -24,25 +24,13 @@
         <li role="presentation" class="button"><a href="/home"><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i><span class="sr-only">(current)</span></span></i></li></a></li>
         <li role="presentation" class="button"><a href="/explore"><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-compass" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Explore"></i></i></span></i></a></li>
         <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Notifications"></i></i></span></i></a></li>
-        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-envelope-o" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
+        <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i></i></span></i></a></li>
         <li role="presentation" class="button"><a href=""><i class="material-icons"><span style="color: #ffffff; font-size: 15pt"><i class="fa fa-stumbleupon" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Stumble Upon"></i></span></i></a></li>
            
 
-
-
-                 
-        
-        
-        
-        
-       
-        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">
+        <li>
             <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <span style="color: #ffffff; font-size: 17pt">
+              <span style="color: #ffffff; font-size: 13pt">
                 <span class="glyphicon glyphicon-user" aria-hidden="true">
                   
                 </span>
@@ -64,8 +52,19 @@
                 <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
               </ul>
         </li>
+
+                 
         
-        <li class="active">
+        
+        
+        
+       
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li class="active this icon">
           <a href="/grav">
             <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Hub">
               <i class="fa fa-grav" aria-hidden="true" ></i>
