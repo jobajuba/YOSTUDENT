@@ -26,6 +26,7 @@
     margin-top: -7px;
 }
 
+
 .navbar {
     background-color: rgba(255, 141, 0, 0.8);
     width: 110%;
@@ -39,7 +40,7 @@
 }
 
 body{
-    background-color:  rgba(0,65,124,0.1);
+    background-color:  rgba(255, 210, 127, 1);
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -109,30 +110,29 @@ body{
     color: #009fff;
 }
 
-.fa-comment-o {
-    margin-top: 10%;
-    margin-left: 3%;
-    font-weight: lighter;
+.fa-comment {
+    margin-left: 25%;
+    font-weight: bold;
     font-size: 20px;
     color: #999999;
 }
 
-.fa-heart-o {
-    font-weight: lighter;
+.fa-heart {
+    font-weight: bold;
     font-size: 20px;
     margin-left: 3%;
     color: #999999;
 }
  
-.fa-circle-thin {
-    font-weight: lighter;
+.fa-circle {
+    font-weight: bold;
     font-size: 20px;
     margin-left: 3%;
     color: #999999;
 }
 
 .glyphicon-fire {
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 20px;
     color: #ff1919;
 }
@@ -146,9 +146,6 @@ body{
 }
 
 
-
-
-
 .new_post_label_text {
     font-size: 70%;
 }
@@ -158,8 +155,9 @@ body{
     margin-left: 2.5%;
 }
 
-.color-icon {
-     
+.mid-panel-icon {
+    margin-bottom: -21px;
+    margin-right: -21px;
 }
 
 .button.material-icon .glyphicon {
@@ -228,3 +226,29 @@ input.form-control {
    margin-left: 5%; 
 }
 
+.post-content {
+    text-align: left;
+    margin-left: 15;
+    margin-top: -25px;
+}
+
+
+.user-avatar {
+    margin-top: -21px;
+    margin-left: -45%;
+    height: 30px;
+    width: 30px;
+}
+
+.post-description {
+    text-align: left;
+    margin-left: 15;
+    margin-top: -25px;
+}
+
+
+.post-links {
+    text-align: left;
+    margin-left: 15;
+    margin-top: -25px;
+}
