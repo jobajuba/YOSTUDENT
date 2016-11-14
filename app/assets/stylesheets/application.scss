@@ -110,21 +110,21 @@ body{
     color: #009fff;
 }
 
-.fa-comment {
+.fa-comment-o {
     margin-left: 25%;
     font-weight: bold;
     font-size: 20px;
     color: #999999;
 }
 
-.fa-heart {
+.fa-heart-o {
     font-weight: bold;
     font-size: 20px;
     margin-left: 3%;
     color: #999999;
 }
  
-.fa-circle {
+.fa-circle-o {
     font-weight: bold;
     font-size: 20px;
     margin-left: 3%;
@@ -197,11 +197,9 @@ input.form-control {
 
 .panel .panel-body{
     background: transparent;
-}
-
-.panel-body {
     width: 100%;
 }
+
 
 .new_post_label_text {
     color: #808080;
@@ -234,7 +232,7 @@ input.form-control {
 
 
 .user-avatar {
-    margin-top: -21px;
+    margin-top: -25px;
     margin-left: -45%;
     height: 30px;
     width: 30px;
@@ -251,4 +249,27 @@ input.form-control {
     text-align: left;
     margin-left: 15;
     margin-top: -25px;
+}
+
+.post-title {
+    margin-top: -40%;
+    margin-left: -15%;
+}
+
+.post-owner {
+    margin-left: 5%;
+    margin-top: -250%;
+    color:  #808080;
+}
+
+.post-owner:hover {
+    color: #262626;
+}
+
+.post-created {
+    
+}
+
+.fa-link {
+    font-size: 8px;
 }

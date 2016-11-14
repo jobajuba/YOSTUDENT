@@ -1,13 +1,13 @@
 <div class="row">
     <!-- Left Panel 1 begins -->
     <div class="col-xs-3">
-        <div class="panel panel-info">
+        <div class="panel">
             <div class="panel-body panel-margin-container">
                <p>stats</p>
             </div>
         </div>
         <!--Left Panel 2 begins -->
-        <div class="panel panel-info" >   
+        <div class="panel" >   
             <div class="panel-body panel-margin-container">
                 <p>Endorsed</p>
             </div>
@@ -22,38 +22,44 @@
                 <% for @p in @posts %>
                          <div class="panel">
                             
-                            <div class="panel-body post-margin-container panel-default">
+                            <div class="panel-body post-margin-container ">
                                 <p class="user-avatar">
-                                    <ol class="breadcrumb">
+                                    <ol class="breadcrumb ">
                                         <li>
                                             <img class="user-avatar" src="/icon.png"></img> 
                                         </li>
                                         
-                                        <li>
-                                        <%= current_user.username %> 
-                                        </li>
+                                        <div class="panel">
+                                            <li class="post-owner">
+                                                <i class="fa fa-link" aria-hidden="true"></i>
+                                                <%= User.find_by(@p.user_id).username %>
+                                            </li>
+                                        </div>    
                                     </ol>
                                 
                                 </p>
                             </div>
                             
                             <div class="panel-body post-margin-container panel-default">
-                               <p class="post-content"><%= @p.content %></p>
+                                
+                                <p class="post-content"><%= @p.content %></p>
+                                
                             </div>
                         
                             <div class="panel-body post-margin-container panel-default">
                                  <div class="caption">
-                                    <h4 class="post-description">Description</h4>
-                                    <p>...</p>
+
                                     <p class="col-sm-offset-9 mid-panel-icon">
-                                        <i class="fa fa-comment" aria-hidden="true"></i>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-circle-o" aria-hidden="true"></i>
                                         <span class="glyphicon glyphicon-fire"></span>
                                     </p>
                                 </div>
                               
-                                <p class="post-links"> Links </p>
+                                <span class="post-created">
+                                    <%= @p.created_at.to_formatted_s(:short) %>
+                                </span>
                             </div>
                         </div>
             <% end %>
@@ -63,7 +69,7 @@
  
      <!-- Right button group Panel 1 begins here -->
     <div class="col-xs-3">
-        <div class="panel panel-info">
+        <div class="panel">
             <div class="panel-body panel-margin-container">
                <p>Recomended User</p>
             </div>
