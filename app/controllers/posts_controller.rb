@@ -14,7 +14,6 @@ class PostsController < ApplicationController
                 format.html {redirect_to "", notice: "Error: Post Not Saved."}
             end
         end
-        
     end 
     
     private

@@ -1,32 +1,17 @@
 <div class="row">
-    <!-- Left Panel 1 begins -->
-    <div class="col-xs-3">
-        <div class="panel">
-            <div class="panel-body panel-margin-container">
-               <p>stats</p>
-            </div>
-        </div>
-        <!--Left Panel 2 begins -->
-        <div class="panel" >   
-            <div class="panel-body panel-margin-container">
-                <p>Endorsed</p>
-            </div>
-         </div>
-    </div>
-    
-    
-    <!-- Center Panel begins here, -->
-    <div class="col-xs-6">
+
+       <!-- Center Panel begins here, -->
+    <div class="col-xs-6 col-sm-offset-2">
         <div class="row">
             <%= render '/components/post_form' %><br>
                 <% for @p in @posts %>
                          <div class="panel">
                             
                             <div class="panel-body post-margin-container ">
-                                <p class="user-avatar">
-                                    <ol class="breadcrumb ">
+                                <p class="user-avatar row">
+                                    <div class="breadcrumb">
                                         <li>
-                                            <img class="user-avatar" src="/icon.png"></img> 
+                                            <img class="user-avatar img-rounded" src="/icon.png"></img> 
                                         </li>
                                         
                                         <div class="panel">
@@ -35,29 +20,26 @@
                                                 <%= User.find_by(@p.user_id).username %>
                                             </li>
                                         </div>    
-                                    </ol>
-                                
+                                    </div>
                                 </p>
                             </div>
                             
-                            <div class="panel-body post-margin-container panel-default">
-                                
+                            <div class="panel-body post-margin-container">
                                 <p class="post-content"><%= @p.content %></p>
-                                
                             </div>
                         
-                            <div class="panel-body post-margin-container panel-default">
+                            <div class="panel-body post-margin-container">
                                  <div class="caption">
-
                                     <p class="col-sm-offset-9 mid-panel-icon">
                                         <i class="fa fa-comment-o" aria-hidden="true"></i>
                                         <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                        <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                        <span class="glyphicon glyphicon-fire"></span>
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                        <i class="fa fa-anchor" aria-hidden="true"></i>
                                     </p>
                                 </div>
                               
                                 <span class="post-created">
+                                    <span class="glyphicon glyphicon-fire"></span>
                                     <%= @p.created_at.to_formatted_s(:short) %>
                                 </span>
                             </div>

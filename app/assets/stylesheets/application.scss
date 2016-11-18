@@ -110,32 +110,36 @@ body{
     color: #009fff;
 }
 
-.fa-comment-o {
-    margin-left: 25%;
+.fa-anchor {
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 3%;
+}
+
+.fa-share {
     font-weight: bold;
     font-size: 20px;
-    color: #999999;
+    margin-left: 3%;
+}
+
+.fa-comment-o {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 3%;
 }
 
 .fa-heart-o {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 3%;
-    color: #999999;
 }
  
-.fa-circle-o {
+.fa-info {
     font-weight: bold;
     font-size: 20px;
     margin-left: 3%;
-    color: #999999;
 }
 
-.glyphicon-fire {
-    font-weight: bold;
-    font-size: 20px;
-    color: #ff1919;
-}
 
 .glyphicon-cog {
     color: #000000;
@@ -157,7 +161,7 @@ body{
 
 .mid-panel-icon {
     margin-bottom: -21px;
-    margin-right: -21px;
+    margin-right: -21%;
 }
 
 .button.material-icon .glyphicon {
@@ -226,8 +230,8 @@ input.form-control {
 
 .post-content {
     text-align: left;
-    margin-left: 15;
-    margin-top: -25px;
+    margin-left: 15px;
+    margin-top: -50px;
 }
 
 
@@ -258,7 +262,7 @@ input.form-control {
 
 .post-owner {
     margin-left: 5%;
-    margin-top: -250%;
+    margin-top: -5%;
     color:  #808080;
 }
 
@@ -270,6 +274,17 @@ input.form-control {
     
 }
 
+.glyphicon-fire {
+    font-weight: bold;
+    font-size: 18px;
+    color: #6dcbf9;
+}
+
+
 .fa-link {
     font-size: 8px;
+}
+
+.breadcrumb {
+    background: transparent;
 }
