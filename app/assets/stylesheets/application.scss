@@ -28,9 +28,9 @@
 
 
 .navbar {
-    background-color: rgba(255, 141, 0, 0.8);
-    width: 110%;
-    border: 10px;
+    background-color: rgba(255, 152, 25, 0.8);
+    width: 120%;
+    margin-left: -10px;
 }
 
 .navbar-guest {
@@ -40,7 +40,7 @@
 }
 
 body{
-    background-color:  rgba(255, 210, 127, 1);
+    background-color:  rgba(255, 152, 25, 0.8);
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -110,66 +110,20 @@ body{
     color: #009fff;
 }
 
-.fa-anchor {
+
+.fa-links {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 3%;
 }
-
-.fa-share {
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 3%;
-}
-
-.fa-comment-o {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 3%;
-}
-
-.fa-heart-o {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 3%;
-}
- 
-.fa-info {
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 3%;
-}
-
-
-.glyphicon-cog {
-    color: #000000;
-}
-
-.glyphicon-user {
-    color: #009fff;
-}
-
 
 .new_post_label_text {
     font-size: 70%;
 }
 
-.btn-group {
-    margin-right: 5%;
-    margin-left: 2.5%;
-}
-
 .mid-panel-icon {
     margin-bottom: -21px;
     margin-right: -21%;
-}
-
-.button.material-icon .glyphicon {
-	margin-right: 0;
-}
-
-.button.material-icon .fa {
-	margin-right: 0;
 }
 
 input.form-control {
@@ -199,8 +153,9 @@ input.form-control {
     background-color: rgba(0,65,124,0.1);
 }
 
-.panel .panel-body{
+.panel {
     background: transparent;
+    background-color: #fff3e5;
     width: 100%;
 }
 
@@ -258,31 +213,6 @@ input.form-control {
 .post-title {
     margin-top: -40%;
     margin-left: -15%;
-}
-
-.post-owner {
-    margin-left: 5%;
-    margin-top: -5%;
-    color:  #808080;
-}
-
-.post-owner:hover {
-    color: #262626;
-}
-
-.post-created {
-    
-}
-
-.glyphicon-fire {
-    font-weight: bold;
-    font-size: 18px;
-    color: #6dcbf9;
-}
-
-
-.fa-link {
-    font-size: 8px;
 }
 
 .breadcrumb {

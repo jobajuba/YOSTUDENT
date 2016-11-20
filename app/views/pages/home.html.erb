@@ -1,49 +1,155 @@
 <div class="row">
+    
+    <div class="col-xs-3">
+        <div class="panel">
+            <div class="panel-body panel-margin-container">
+               <p>Current active user</p>
+               <p>User stats</p>
+               
+               <hr>
+               <p>
+                   <ol>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Notifications"></i>
+                        <i class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Messages"></i>
+                        <i class="fa fa-stumbleupon" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Stumble Upon"></i>
+                   </ol>
+               </p>
+            </div>
+        </div>
+        
+        <div class="panel-body">
+                <ol class="breadcrumb">
+                        <li>
+                            <a href="#">
+                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Active projects">
+                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+        
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Affiliates">
+                                   <i class="fa fa-users" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li class="active">
+                            <a href="#">
+                                <span style="color: #8c198c; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="Begin new project">
+                                    <i class="fa fa-user-plus" aria-hidden="true" ></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+              
+                 <hr>
+                
+                 Begin new project   
+                 
+                 <hr>
+   
+                    	<li class="active">
+                    		<a href="#">
+                    			<span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
+                    				<i class="fa fa-headphones" aria-hidden="true">
+                    				   
+                    				</i>
+                                                
+                    			</span>
+                    		</a>
+                    	</li>
+                    	
+                    	<li class="active">
+                    		<a href="#">
+                    			<span style="color: #70b0c3; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="text">
+                    					<i class="fa fa-file-text-o" aria-hidden="true">
+                    					 
+                    					</i>
+                                               
+                    			</span>
+                    		</a>
+                    	</li>
+                    	<li class="active">
+                    		<a href="#">
+                    			<span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
+                    				<i class="fa fa-video-camera" aria-hidden="true">
+                    				   
+                    				</i>
+                                                
+                    			</span>
+                    		</a>
+                    	</li>
+                    	
+                    	<li class="active">
+                    		<a href="#">
+                    		    <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
+                    				<i class="fa fa-camera-retro" aria-hidden="true">
+                    				 
+                    				</i>
+                    			</span>
+                    		</a>
+                    	</li>
+                    </ol>
+            </div>
+       
+        <div class="panel panel-info" >   
+            <div class="panel-body panel-margin-container">
+                <p>Active Tutors</p>
+            </div>
+         </div>
+    </div>
 
        <!-- Center Panel begins here, -->
-    <div class="col-xs-6 col-sm-offset-2">
+    <div class="col-xs-6">
         <div class="row">
             <%= render '/components/post_form' %><br>
-                <% for @p in @posts %>
-                         <div class="panel">
+            <% for @p in @posts %>
+        <div class="panel">
+            <div class="panel-body post-margin-container ">
+                <p class="user-avatar row">
+                   
+                        <div class="breadcrumb">
+                        <li>
+                            <img class="user-avatar img-rounded" src="/icon.png"></img> 
+                        </li>
                             
-                            <div class="panel-body post-margin-container ">
-                                <p class="user-avatar row">
-                                    <div class="breadcrumb">
-                                        <li>
-                                            <img class="user-avatar img-rounded" src="/icon.png"></img> 
-                                        </li>
-                                        
-                                        <div class="panel">
-                                            <li class="post-owner">
-                                                <i class="fa fa-link" aria-hidden="true"></i>
-                                                <%= User.find_by(@p.user_id).username %>
-                                            </li>
-                                        </div>    
-                                    </div>
-                                </p>
-                            </div>
-                            
-                            <div class="panel-body post-margin-container">
-                                <p class="post-content"><%= @p.content %></p>
-                            </div>
-                        
-                            <div class="panel-body post-margin-container">
-                                 <div class="caption">
-                                    <p class="col-sm-offset-9 mid-panel-icon">
-                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                        <i class="fa fa-info" aria-hidden="true"></i>
-                                        <i class="fa fa-anchor" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                              
-                                <span class="post-created">
-                                    <span class="glyphicon glyphicon-fire"></span>
-                                    <%= @p.created_at.to_formatted_s(:short) %>
-                                </span>
-                            </div>
+                        <div class="panel">
+                            <li class="post-owner">
+                                 <a href="/user/<%= current_user.username %>">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <%= User.find_by(@p.user_id).username %> 
+                                </a>
+                            </li>
+                        </div>    
                         </div>
+                   
+                </p>
+            </div>
+                            
+            <div class="panel-body post-margin-container">
+                <p class="post-content"><%= @p.content %></p>
+            </div>
+                        
+            <div class="panel-body post-margin-container">
+            <div class="caption">
+                <p class="col-sm-offset-9 mid-panel-icon">
+                    <i class="fa fa-reply fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="reply"></i>
+                    <i class="fa fa-heart fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="like"></i>
+                    <i class="fa fa-info fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="info"></i>
+                    <i class="fa fa-anchor fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Anchor post"></i>
+                    <i class="fa fa-caret-down fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="More options"></i>
+                </p>
+            </div>
+                              
+            <span class="post-created">
+            
+                <%= @p.created_at.to_formatted_s(:short) %>
+            </span>
+        </div>
+        </div>
             <% end %>
         </div>
     </div>
@@ -54,26 +160,20 @@
         <div class="panel">
             <div class="panel-body panel-margin-container">
                <p>Recomended User</p>
+               <hr>
+               <p>Recomended Projects</p>
+               <hr>
+               <p></p>
             </div>
         </div>
         <!--Left Panel 2 begins -->
         <div class="panel panel-info" >   
             <div class="panel-body panel-margin-container">
-                <p>Recomended Projects</p>
-            </div>
-         </div>
-         
-         <div class="panel panel-info" >   
-            <div class="panel-body panel-margin-container">
                 <p>Recomended Sponsors</p>
             </div>
-         </div>
+        </div>
          
-         <div class="panel panel-info" >   
-            <div class="panel-body panel-margin-container">
-                <p>Active Tutors</p>
-            </div>
-         </div>
+         
     </div>
 </div>
 
