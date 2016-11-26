@@ -28,7 +28,7 @@
 
 
 .navbar {
-    background-color: rgba(255, 152, 25, 0.8);
+    background-color: rgba(255,255, 255, 0.8);
     width: 120%;
     margin-left: -10px;
 }
@@ -41,12 +41,12 @@
 
 .panel {
     background: transparent;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255,255, 255, 0.8);
     width: 100%;
 }
 
 body{
-    background-color:  rgba(255, 152, 25, 0.6);
+    background-color:  rgba(255,255, 255, 0.8);
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -59,53 +59,70 @@ body{
 }
 
 
-//icons
+//Navbar icons timeline
+.material-timeline {
+    color: #7f7f7f; 
+    font-size: 18pt;
+}
 
 .fa-globe {
     margin-left: -18px;
     margin-right: -15px;
+    margin-top: -2px;
+}
+
+//Navbar icons explore
+.material-explore {
+    color: #7f7f7f; 
+    font-size: 18pt;
 }
 
 .fa-compass {
     margin-left: -18px;
     margin-right: -15px;
+    margin-top: -2px;
 }
 
+
+//Navbar icons recommended
+.material-recommended {
+    color: #7f7f7f; 
+    font-size: 18pt;
+}
+
+.fa-stumbleupon {
+    margin-left: -18px;
+    margin-right: -15px;
+    margin-top: -2px;
+}
+
+//Navbar dropdown caret
+.material-caret {
+    color: #7f7f7f;
+    font-size: 20pt;
+}
+
+
+//Notifications
 .fa-exclamation-circle {
     margin-left: -18px;
     margin-right: -15px;
 }
 
+//Messages
 .fa-envelope {
     margin-left: -18px;
     margin-right: -15px;
 }
-.fa-stumbleupon {
-    margin-left: -18px;
-    margin-right: -15px;
-}
-
-.glyphicon-user {
-    margin-left: 0px;
-}
 
 .fa:hover, .dropdown-toggle {
-    color: #0c5393;
+    color: #ff8d00;
 }
-
-.fa .fa-users:hover {
-    color: #ff0000;
-}
-
 
 .fa-grav {
     color: #ff1919;
     margin-right: -5%;
     margin-left: -5%;
-}
-
-.fa-user {
-    color:	#f2fb69;
 }
 
 .fa-folder-open {
