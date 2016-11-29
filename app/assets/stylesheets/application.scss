@@ -28,7 +28,7 @@
 
 
 .navbar {
-    background-color: rgba(255,255, 255, 0.8);
+    background-color: rgba(255,141, 0, 1);
     width: 120%;
     margin-left: -10px;
 }
@@ -40,13 +40,12 @@
 }
 
 .panel {
-    background: transparent;
-    background-color: rgba(255,255, 255, 0.8);
+    background-color: rgba(255,255, 255, 1);
     width: 100%;
 }
 
 body{
-    background-color:  rgba(255,255, 255, 0.8);
+    background-color:  rgba(255,141, 0, 0.6);
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -61,7 +60,7 @@ body{
 
 //Navbar icons timeline
 .material-timeline {
-    color: #7f7f7f; 
+    color: #ffffff; 
     font-size: 18pt;
 }
 
@@ -73,7 +72,7 @@ body{
 
 //Navbar icons explore
 .material-explore {
-    color: #7f7f7f; 
+    color: #ffffff; 
     font-size: 18pt;
 }
 
@@ -86,7 +85,7 @@ body{
 
 //Navbar icons recommended
 .material-recommended {
-    color: #7f7f7f; 
+    color: #ffffff; 
     font-size: 18pt;
 }
 
@@ -98,7 +97,7 @@ body{
 
 //Navbar dropdown caret
 .material-caret {
-    color: #7f7f7f;
+    color: #fffff;
     font-size: 20pt;
 }
 
@@ -116,7 +115,7 @@ body{
 }
 
 .fa:hover, .dropdown-toggle {
-    color: #ff8d00;
+    color: rgba(76,142,174,0.8)
 }
 
 .fa-grav {
@@ -233,4 +232,13 @@ input.form-control {
 
 .breadcrumb {
     background: transparent;
+}
+
+.recommends {
+    background-color: transparent;
+}
+
+.hr-rec {
+    font-weight: bold;
+    color: #7FACFF;
 }

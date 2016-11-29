@@ -2,30 +2,108 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="jumbotron">
-            <%= @username %>
+            
         </div>
     </div>
 </div>
 <!-- begin row 2, -->
 <div class="row">
     <div class="col-xs-3">
-        <div class="panel panel-info panel-margin">
-            <div class="panel-body">
-               <p>Profile</p>
+        <div class="panel">
+            <div class="panel-body panel-margin-container">
+                <p>Cover Image/360 image/360 video</p>
+                <hr>
+                <p>Current active user</p>
+                <hr>
+                <p>User stats</p>
+                <hr>
+                <p>
+                
+                <ol class="breadcrumb">
+                <li class="active">
+                <a href="#">
+                <span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
+                <i class="fa fa-headphones" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                        	
+                <li class="active">
+                <a href="#">
+                <span style="color: #70b0c3; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="text">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                    
+                <li class="active">
+                <a href="#">
+                <span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                        	
+                <li class="active">
+                <a href="#">
+                <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                </ol>  
+                
+                </p>
             </div>
         </div>
     </div>
 
+     <!-- Center Panel begins here, -->
     <div class="col-xs-6">
-       <%= render '/components/post_form' %>
-            <% for @p in @posts %> <!-- Calls every post in the database, -->
-                <div class="panel panel-default">    
-                    <div class="panel-body">
-                       <p><%= @p.content %></p>
-                    </div>
-                </div>
-            <% end %>
-         
+    <div class="row">
+        <%= render '/components/post_form' %><br>
+        <% for @p in @posts %>
+        
+        <div class="panel">
+        <div class="panel-body post-margin-container ">
+        <p class="user-avatar row">
+            <div class="breadcrumb">
+            <li><img class="user-avatar img-rounded" src="/icon.png"></img></li>
+                                        
+            <div class="panel">
+            <li class="post-owner">
+            <a href="/user/<%= current_user.username %>">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <%= User.find_by(@p.user_id).username %> 
+            </a>
+            </li>
+            </div>    
+        </p>
+        </div>
+                                        
+        <div class="panel-body post-margin-container">
+        <p class="post-content"><%= @p.content %></p>
+        </div>
+                                       
+        <div class="panel-body post-margin-container">
+        <div class="caption">
+        <p class="col-sm-offset-9 mid-panel-icon">
+            <i class="fa fa-reply fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="reply"></i>
+            <i class="fa fa-heart fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="like"></i>
+            <i class="fa fa-info fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="info"></i>
+            <i class="fa fa-anchor fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Anchor post"></i>
+            <i class="fa fa-caret-down fa-links" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="More options"></i>
+        </p>
+        </div>
+                        
+        <span class="post-created">
+        <%= @p.created_at.to_formatted_s(:short) %>
+        </span>
+        </div>
+        </div>
+        </div>
+        <% end %>
+    </div>
     </div>
     
     
