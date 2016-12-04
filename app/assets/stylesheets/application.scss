@@ -22,11 +22,6 @@
     margin-top: -21px;
 }
 
-.post-margin-container {
-    margin-top: -7px;
-}
-
-
 .navbar {
     background-color: rgba(255,141, 0, 1);
     width: 120%;
@@ -45,16 +40,18 @@
 }
 
 body{
-    background-color:  rgba(255,141, 0, 0.6);
+    background-color:  rgba(242,242, 242, 1);
 }
 .navbar-default .navbar-brand {
-    color: #ffffff;
+    color: #ffffff !important;
+    display: block;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
     color: #0c5393;
-    background-color:transparent;
+    background-color:transparent !important;
+    display: block;
 }
 
 
@@ -139,13 +136,9 @@ body{
     margin-left: 3%;
 }
 
-.new_post_label_text {
-    font-size: 70%;
-}
-
-.mid-panel-icon {
-    margin-bottom: -21px;
-    margin-right: -21%;
+.post-margin-container {
+    margin-top: -21px;
+    
 }
 
 input.form-control {
@@ -171,74 +164,48 @@ input.form-control {
     color:#0c5393;
 }
 
-.btn-group .btn {
-    background-color: rgba(0,65,124,0.1);
-}
-
-.new_post_label_text {
-    color: #808080;
-    font-size: 100%;
-    margin-right: 0;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-
 .new-btn-label-icon {
     
     margin-left: 5%;
     margin-right: 0%;
 }
 
-.post-panel {
-     margin-top: -21px;   
-}
-
-.user-image-profile {
-   margin-left: 5%; 
-}
-
-.post-content {
-    text-align: left;
-    margin-left: 15px;
-    margin-top: -50px;
-}
-
-
-.user-avatar {
-    margin-top: -25px;
-    margin-left: -45%;
-    height: 30px;
-    width: 30px;
-}
-
-.post-description {
-    text-align: left;
-    margin-left: 15;
-    margin-top: -25px;
-}
-
-
-.post-links {
-    text-align: left;
-    margin-left: 15;
-    margin-top: -25px;
-}
-
-.post-title {
-    margin-top: -40%;
-    margin-left: -15%;
-}
-
-.breadcrumb {
-    background: transparent;
-}
-
-.recommends {
-    background-color: transparent;
+.brd-bg {
+    background: rgba(255,255, 255, 1);
 }
 
 .hr-rec {
     font-weight: bold;
     color: #7FACFF;
+}
+
+.user-avatar {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+}
+
+//Post panel
+.post-panel {
+    margin-top: -21px;
+}
+
+.post-title {
+    text-align: left;
+    margin-left: -7px;
+    margin-top: 5px;
+}
+
+.post-content{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.post-tags {
+    
+}
+
+.post-links {
+    
 }
