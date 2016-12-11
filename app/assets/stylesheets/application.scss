@@ -190,15 +190,42 @@ input.form-control {
     margin-top: -21px;
 }
 
+.user-avatar:hover {
+    opacity: 0.80;
+}
+
 .post-title {
     text-align: left;
     margin-left: -7px;
     margin-top: 5px;
 }
 
+.post-owner {
+    color: black;
+    font-weight: bold;
+}
+
+.post-owner:hover {
+    color: rgba(255,141, 0, 1);
+    opacity: 0.50;
+}
+
+.post-date {
+    color: black;
+    text-align: right;
+    opacity: 0.5;
+}
+.post-date:hover {
+    color: rgba(255,141, 0, 1);
+}
+
 .post-content{
     text-align: left;
     margin-top: 30px;
+    margin-left: 0;
+}
+
+.content-container {
     margin-left: -40px;
 }
 
@@ -207,5 +234,41 @@ input.form-control {
 }
 
 .post-links {
-    
+    text-align: left;
+}
+
+.like-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+.like-text:hover .like-icon:hover {
+    color: #66cdaa;
+}
+
+.share-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.ancor-icon {
+    margin-left: 10px;
+    margin-right: 10px; 
+    opacity: 0.6;
+}
+
+.more-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+
+//TeamStream-p2p
+.booth {
+    width: 400px;
+    background: transparent;
+    border: 4px solid #ddd;
+    margin:0 auto;
 }
