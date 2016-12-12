@@ -254,6 +254,11 @@ input.form-control {
     opacity: 1;
 }
 
+.fa-heart:hover {
+    color: rgba(244,86,77,1);
+    opacity: 1;
+}
+
 //share icon and text
 .share-icon {
     margin-left: 10px;
@@ -268,6 +273,33 @@ input.form-control {
 
 .share-icon:hover {
     color: rgba(51,153,255,1);
+    opacity: 1;
+}
+
+.fa-retweet:hover {
+    color: rgba(51,153,255,1);
+    opacity: 1;
+}
+
+
+//more icon and text
+.more-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.4;
+}
+
+.more-text:hover {
+    color: rgba(138,43,226,1);
+    opacity: 1;
+}
+.more-icon:hover {
+    color: rgba(138,43,226,1);
+    opacity: 1;
+}
+
+.fa-bars:hover {
+    color: rgba(138,43,226,1);
     opacity: 1;
 }
 
@@ -287,21 +319,11 @@ input.form-control {
     opacity: 1;
 }
 
-//more icon and text
-.more-icon {
-    margin-left: 10px;
-    margin-right: 10px;
-    opacity: 0.4;
+.fa-folder:hover {
+    color: rgba(127,220,136,1);
+    opacity: 1;
 }
 
-.more-text:hover {
-    color: rgba(138,43,226,1);
-    opacity: 1;
-}
-.more-icon:hover {
-    color: rgba(138,43,226,1);
-    opacity: 1;
-}
 
 
 //TeamStream-p2p
