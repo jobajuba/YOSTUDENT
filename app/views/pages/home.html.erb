@@ -1,64 +1,7 @@
 <div class="row container-fluid">
-    
-    <div class="col-xs-3">
-        <div class="panel panel-default">
-            <div class="panel-body panel-margin-container">
-                <p>Cover Image/360 image/360 video</p>
-                <hr>
-                <p>Current active user</p>
-                <hr>
-                <p>User stats</p>
-                <hr>
-                <p>
-                
-                <ol class="breadcrumb brd-bg">
-                <li class="active">
-                <a href="#">
-                <span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
-                <i class="fa fa-headphones" aria-hidden="true"></i>
-                </span>
-                </a>
-                </li>
-                        	
-                <li class="active">
-                <a href="#">
-                <span style="color: #7FACFF; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="text">
-                <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                </span>
-                </a>
-                </li>
-                    
-                <li class="active">
-                <a href="#">
-                <span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
-                <i class="fa fa-video-camera" aria-hidden="true"></i>
-                </span>
-                </a>
-                </li>
-                        	
-                <li class="active">
-                <a href="#">
-                <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                <i class="fa fa-camera-retro" aria-hidden="true"></i>
-                </span>
-                </a>
-                </li>
-                </ol>  
-                
-                </p>
-            </div>
-        </div>
-        
-        
-        <div class="panel">
-            <div class="panel-body panel-margin-container ad-panel">
-                <p>You most recent activity </p>
-            </div>
-        </div>
-    </div>
 
        <!-- Center Panel begins here, -->
-    <div class="col-xs-6">
+    <div class="col-xs-6 col-xs-offset-2">
         <%= render '/components/post_form' %><br>
         <% for @p in @posts %>
             
@@ -76,6 +19,12 @@
                         <p class="content-container">
                             <span class="post-content container-fluid"><%= @p.content %></span>
                         </p>
+                    </div>
+                    
+                    <div class="ancor-icon">
+                        <span class="#" data-toggle="tooltip" data-placement="top" title="Anchor workspace" >
+                                <i class="fa fa-anchor" aria-hidden="true"></i>
+                        </span>
                     </div>
                  
                     <div class="col-sm-11">
@@ -101,13 +50,10 @@
                                     <span class="like-anc">More</span>
                                 </span>
                                 
-                                <span class="ancor-icon">
-                                    <i class="fa fa-anchor" aria-hidden="true"></i>
-                                </span>
-                                
                             </span>
                         </p>
                     </div>
+                    
                 </div>
             </div>    
         <% end %>

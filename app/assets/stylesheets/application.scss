@@ -180,9 +180,23 @@ input.form-control {
 }
 
 .user-avatar {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    margin-left: -100px;
+    margin-top: -15px;
+}
+
+.user-avatar-profile {
     height: 30px;
     width: 30px;
     background-color: transparent;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+.user-avatar:hover {
+    opacity: 0.80;
 }
 
 //Post panel
@@ -190,22 +204,33 @@ input.form-control {
     margin-top: -21px;
 }
 
-.user-avatar:hover {
-    opacity: 0.80;
-}
+
 
 .post-title {
     text-align: left;
     margin-left: -7px;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 .post-owner {
     color: black;
     font-weight: bold;
+    margin-left: -53px;
 }
 
 .post-owner:hover {
+    color: rgba(255,141, 0, 1);
+    opacity: 0.50;
+}
+
+.post-owner-profile {
+    color: black;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+.post-owner-profile:hover {
     color: rgba(255,141, 0, 1);
     opacity: 0.50;
 }
@@ -221,20 +246,35 @@ input.form-control {
 
 .post-content{
     text-align: left;
-    margin-top: 30px;
-    margin-left: 0;
+    margin-top: -5px;
+    margin-left: -53px;
+}
+
+.post-content-profile {
+    text-align: left;
+    margin-top: -5px;
+    margin-left: -30px;
 }
 
 .content-container {
-    margin-left: -40px;
+    margin-left: -25px;
+    margin-top: -20px;
 }
 
 .post-tags {
-    
+    color: black;
+    font-weight: bold;
+    margin-left: -15px;
 }
 
 .post-links {
     text-align: left;
+    margin-left: -20px;
+}
+
+
+.fa-anchor:hover {
+    color: black;
 }
 
 //like icon and text
@@ -305,13 +345,13 @@ input.form-control {
 
 //ancor icon and text
 .ancor-icon {
-    margin-left: 10px;
-    margin-right: 10px; 
-    opacity: 0.4;
+    margin-left: 20px;
+    margin-right: -2px; 
+    text-align: right;
+    opacity: 0.8;
 }
 
 .ancor-text:hover {
-    color: rgba(127,220,136,1);
     opacity: 1;
 }
 .ancor-icon:hover {
@@ -324,12 +364,29 @@ input.form-control {
     opacity: 1;
 }
 
-
-
 //TeamStream-p2p
 .booth {
     width: 400px;
     background: transparent;
     border: 4px solid #ddd;
     margin:0 auto;
+}
+
+
+//Post form and button icons. 
+.post-form-buttons{
+    margin-top: -60px;
+    background: transparent;
+}
+
+.post-form {
+    margin-left: 43px;
+}
+
+.post-submit-button {
+    margin-top: 20px;
+}
+
+.audio-button {
+    margin-top: 100px;
 }
