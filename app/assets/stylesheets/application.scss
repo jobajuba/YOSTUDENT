@@ -188,11 +188,11 @@ input.form-control {
 }
 
 .user-avatar-profile {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     margin-left: -20px;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 .user-avatar:hover {
@@ -226,7 +226,7 @@ input.form-control {
 .post-owner-profile {
     color: black;
     font-weight: bold;
-    margin-left: -20px;
+    margin-left: -8px;
     margin-top: -5px;
 }
 
@@ -253,23 +253,23 @@ input.form-control {
 .post-content-profile {
     text-align: left;
     margin-top: -5px;
-    margin-left: -30px;
+    margin-left: -5px;
 }
 
 .content-container {
-    margin-left: -25px;
-    margin-top: -20px;
+    margin-left: -15px;
+    margin-top: -30px;
 }
 
 .post-tags {
     color: black;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: 28px;
 }
 
 .post-links {
     text-align: left;
-    margin-left: -20px;
+    margin-left: 25px;
 }
 
 
@@ -389,4 +389,13 @@ input.form-control {
 
 .audio-button {
     margin-top: 100px;
+}
+
+.post-form-panel {
+    margin-bottom: -15px; 
+}
+
+.content-panel {
+    margin-bottom: -5px;
+    
 }

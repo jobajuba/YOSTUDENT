@@ -1,23 +1,76 @@
 <div class="row container-fluid">
+    <div class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-body panel-margin-container">
+                <p>
+                    <div class="col-sm-1">
+                        <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
+                    </div>
+                </p>
+                <hr>
+                <p>Current active user</p>
+                <hr>
+                <p>User stats</p>
+                <hr>
+                <p>
+                
+                <ol class="breadcrumb">
+                <li class="active">
+                <a href="#">
+                <span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
+                <i class="fa fa-headphones" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                        	
+                <li class="active">
+                <a href="#">
+                <span style="color: #70b0c3; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="text">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                    
+                <li class="active">
+                <a href="#">
+                <span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                        	
+                <li class="active">
+                <a href="#">
+                <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                </span>
+                </a>
+                </li>
+                </ol>  
+                
+                </p>
+            </div>
+        </div>
+    </div>
 
        <!-- Center Panel begins here, -->
-    <div class="col-xs-6 col-xs-offset-2">
+    <div class="col-xs-6">
         <%= render '/components/post_form' %><br>
         <% for @p in @posts %>
             
-            <div class="panel panel-default">
-                <div class="panel-body">       
+            <div class="panel panel-default ">
+                <div class="panel-body content-panel">       
                     <div class="col-sm-1">
-                        <img class="img-rounded user-avatar" src="/icon.png"></img> 
+                        <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
                     </div>
                     
                     <div class="col-sm-10">
                         <p class="post-title">
-                            <span class="post-owner"><%= User.find(@p.user_id).username %></span>  
+                            <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
                             <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
                         </p>
                         <p class="content-container">
-                            <span class="post-content container-fluid"><%= @p.content %></span>
+                            <span class="post-content-profile container-fluid"><%= @p.content %></span>
                         </p>
                     </div>
                     
@@ -36,7 +89,14 @@
                     <div class="col-sm-12">
                         <p> 
                             <span class="post-links">
+                                
+                                
                             
+                                <span class="like-icon">
+                                    <i class="fa fa-reply" aria-hidden="true"></i>
+                                    <span class="like-text">Like</span>
+                                </span>
+                                
                                 <span class="like-icon">
                                     <i class="fa fa-heart" aria-hidden="true"></i>
                                     <span class="like-text">Like</span>
