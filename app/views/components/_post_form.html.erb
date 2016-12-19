@@ -1,11 +1,11 @@
-<div class="panel panel-default">
+<div class="panel panel-default panel-top">
   <div class="panel-body form-controller">  
  
     <div class="col-sm-10 post-form">
         <%= form_for(@newPost) do |f| %>
           <center>
             
-            <div class="field" style="margin-left: -60px; width: 130%;">
+            <div class="field" style="margin-left: -60px; background: white; width: 130%;">
               <%= f.text_field :content, autofocus: true, class: "form-control" %>
               
               <span class="post-submit-button" style="float: right">  
@@ -18,47 +18,10 @@
     </div>
   </div>
   
-  <div class="col-sm-10">
-        <ol class="breadcrumb post-form-buttons">
-            <li class="active">
-            <a href="#">
-            <span style="color:  #66cdaa; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
-            </span>
-            </a>
-            </li>
-                        	
-            <li class="active">
-            <a href="#">
-            <span style="color: #7FACFF; font-size: 20pt" data-toggle="tooltip" data-placement="bottom" title="text">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            </span>
-            </a>
-            </li>
-                    
-            <li class="active">
-            <a href="#">
-            <span style="color: #f7a868; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Media">
-            <i class="fa fa-video-camera" aria-hidden="true"></i>
-            </span>
-            </a>
-            </li>
-                        	
-            <li class="active">
-            <a href="#">
-            <span style="color: #9c3e60; font-size: 22pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-            <i class="fa fa-camera-retro" aria-hidden="true"></i>
-            </span>
-            </a>
-            </li>
-        </ol>  
-    
-      
-    </div>
-    
+  <div class="col-sm-11">
+        
     <div class="tips-btn">  
     <p> 
-    Filter
         <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
         <button type="button" class="btn btn-primary"><i class="fa fa-headphones" aria-hidden="true"></i> Audio</button>
         
@@ -72,13 +35,10 @@
         <button type="button" class="btn btn-warning"><i class="fa fa-camera-retro" aria-hidden="true"></i> Image</button>
         
         <!-- Indicates a dangerous or potentially negative action -->
-        <button type="button" class="btn btn-danger"><i class="fa fa-stumbleupon" aria-hidden="true"></i> Tumble</button>
-        
-        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-        <button type="button" class="btn btn-link">Link</button>
+        <button type="button" class="btn btn-danger"><i class="fa fa-television" aria-hidden="true"></i> Livestream</button>
     </p>    
     </div>
-         
+  </div>     
 </div>    
 
 
