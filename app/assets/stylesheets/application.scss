@@ -29,9 +29,13 @@
 }
 
 .navbar-guest {
-    background: transparent;
+    background-color: rgba(255,141, 0, 1);
     width: 100%;
+    height: 15%;
     border: 0px;
+}
+
+.navbar-guest {
 }
 
 //Nav search
@@ -298,6 +302,38 @@ input.form-control {
     color: black;
 }
 
+
+
+
+
+
+//Reply icon and text
+.reply-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.4;
+}
+
+.reply-text:hover {
+    color: rgba(21,221,234,1);
+    opacity: 1;
+}
+
+.reply-icon:hover {
+    color: rgba(21,221,2347,1);
+    opacity: 1;
+}
+
+.reply-reply:hover{
+     color: rgba(21,221,2347,1);
+    opacity: 1;
+}
+
+
+
+
+
+
 //like icon and text
 .like-icon {
     margin-left: 5px;
@@ -320,6 +356,11 @@ input.form-control {
     opacity: 1;
 }
 
+
+
+
+
+
 //share icon and text
 .share-icon {
     margin-left: 10px;
@@ -328,19 +369,18 @@ input.form-control {
 }
 
 .share-text:hover {
-    color: rgba(51,153,255,1);
+    color: rgba(23,220,195,1);
     opacity: 1;
 }
 
 .share-icon:hover {
-    color: rgba(51,153,255,1);
+    color: rgba(23,220,195,1);
     opacity: 1;
 }
 
-.fa-retweet:hover {
-    color: rgba(51,153,255,1);
-    opacity: 1;
-}
+
+
+
 
 
 //more icon and text
@@ -364,6 +404,16 @@ input.form-control {
     opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
 //ancor icon and text
 .ancor-icon {
     margin-left: 20px;
@@ -385,6 +435,13 @@ input.form-control {
     opacity: 1;
 }
 
+
+
+
+
+
+
+
 //TeamStream-p2p
 .booth {
     width: 400px;
@@ -392,6 +449,12 @@ input.form-control {
     border: 4px solid #ddd;
     margin:0 auto;
 }
+
+
+
+
+
+
 
 
 //Post form and button icons. 
@@ -433,13 +496,21 @@ input.form-control {
 }
 
 .form-controller {
-    background: rgba(255,141, 0, 0.8);
+    background: rgba(255,141, 0, 0.9);
 }
 
 .form-control {
     background: white;
     border: transparent;
 }
+
+
+
+
+
+
+
+
 
 //User info home panel
 .user-avatar-home {
@@ -455,6 +526,12 @@ input.form-control {
     margin-left: 15px;
     text-align: left;
 }
+
+
+
+
+
+
 
 
 
