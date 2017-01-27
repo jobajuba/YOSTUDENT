@@ -73,17 +73,24 @@ body{
 }
 
 .fa-globe {
-    margin-left: -18px;
+    margin-left: -100px;
     margin-right: -15px;
     margin-top: -2px;
+    font-size: 25pt;
 }
 
-.home_TL {
+.Home_TL {
     font-size: 10pt;
     font-weight: bold;
     color: white;
-    
-    margin-left: 13px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.fa-th {
+    margin-left: -4px;
+    color: blue;
+    font-size: 25pt;
 }
 
 //Navbar icons explore
@@ -93,9 +100,10 @@ body{
 }
 
 .fa-compass {
-    margin-left: -18px;
+    margin-left: -100px;
     margin-right: -15px;
     margin-top: -2px;
+    font-size: 25pt;
 }
 
 
@@ -118,6 +126,13 @@ body{
 }
 
 
+//Workspace
+.grav {
+    font-size: 20pt;
+    color: red;
+    margin-right: 5px;
+}
+
 //Notifications
 .fa-exclamation-circle {
     margin-left: -18px;
@@ -134,11 +149,8 @@ body{
     color: rgba(76,142,174,0.8)
 }
 
-.fa-grav {
-    color: #ff1919;
-    margin-right: -5%;
-    margin-left: -5%;
-}
+
+
 
 .fa-folder-open {
     color: #198c19;
