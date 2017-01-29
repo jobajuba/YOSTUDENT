@@ -30,7 +30,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
         <div class="btn-group btn-group-sm" role="group" aria-label="...">
-          <%= link_to('Sign in', new_user_session_path) %>
+          <%= link_to "Log in", new_user_session_path, :id => 'login', "data-toggle" => "modal", 'data-target' => '#login-modal' %>
         </div>
       </li>
       <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
