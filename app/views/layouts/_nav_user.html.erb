@@ -41,57 +41,19 @@
         <!-- 
         Globe icon 
         -->
-        <li role="presentation" class="button">
+        <li role="presentation">
           <a href="/home">
-            <i class="fa fa-globe material-timeline" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home"></i>
-            <span class="Home_TL"></span>
+            <i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home">
+              <div class="Home_TL">Home</div>
+              <div type="image" class="this-under-btn" ></div>  
+            </i>
             <span class="sr-only">(current)</span>
           </a>
         </li>
         
         
         
-        <!-- 
-        Compass icon 
-        -->
-        <li role="presentation" class="button"><a href="/explore"><i class="fa fa-compass material-explore" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Explore"></i></a></li>
         
-        
-        
-        <!-- 
-        User Icon 
-        -->
-        <li class="">
-            <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="this-user">
-                <span class=""> <i class="fa fa-th" aria-hidden="true"></i></span></span>
-              </div>
-          
-            </a>
-              <ul class="dropdown-menu">
-                <li><a href="/user/<%= current_user.username %>">Profile</a></li>
-                <li role="separator" class="divider"></li>
-                
-                <li><a href="#">Messaging</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Activity Log</a></li>
-                <li role="separator" class="divider"></li>
-                
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Account</a></li>
-                <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
-                <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
-              </ul>
-        </li>
-        
-        <!-- Astronaut Icon -->
-        <li class="">
-          <a href="/grav">
-            <span class="grav" data-toggle="tooltip" data-placement="bottom" title="Hub">
-              <i class="fa fa-grav" aria-hidden="true" ></i>
-            </span>
-          </a>
-        </li>
         
       </ul>
     </div><!-- /.navbar-collapse -->

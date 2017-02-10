@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
     
     def new
-        @post = Post.new
+        @post = current_user.posts.build
     end
     
     def create 
-        @post = Post.new(post_params)
+        @post = current_user.posts.build(post_params)
         @post.user_id = current_user.id
         respond_to do |format|
             if (@post.save)

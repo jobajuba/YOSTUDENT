@@ -28,12 +28,14 @@
       </ul>
      
     <ul class="nav navbar-nav navbar-right">
-      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
+      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-login">
         <div class="btn-group btn-group-sm" role="group" aria-label="...">
-          <%= link_to "Log in", new_user_session_path, :id => 'login', "data-toggle" => "modal", 'data-target' => '#login-modal' %>
+          <%= link_to('Sign in', new_user_session_path) %>
         </div>
       </li>
-      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn">
+      
+      
+      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-signup">
         <div class="btn-group btn-group-sm" role="group" aria-label="...">
           <%= link_to('Sign up', new_user_registration_path) %>
         </div>
