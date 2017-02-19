@@ -34,28 +34,36 @@
       </ul>
       
       
-<!-- navbar right options -->      
-      <ul class="nav navbar-nav navbar-right">
-        
-        
-        <!-- 
-        Globe icon 
-        -->
-        <li role="presentation">
-          <a href="/home">
-            <i class="fa fa-globe" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Home">
-              <div class="Home_TL">Home</div>
-              <div type="image" class="this-under-btn" ></div>  
-            </i>
-            <span class="sr-only">(current)</span>
-          </a>
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <div class="this-nav-home">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <span class="this-home">
+              Home
+            </span>
+          </div>
         </li>
         
-        
-        
-        
+        <li>
+          <div class="this-nav-user">
+            
+            <span class="this-user">
+              <%= User.find(@p.user_id).username %>
+            </span>
+          </div>
+        </li>
         
       </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          
+        </li>
+      </ul>
+      
+      
+    <!-- navbar right options -->      
+     
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

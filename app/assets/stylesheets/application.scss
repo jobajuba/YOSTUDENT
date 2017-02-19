@@ -89,12 +89,20 @@ body{
 
 
 //Navbar icons timeline
+.this-nav-home {
+    margin-top: 11px;
+    margin-left: 100px;
+}
+
 .fa-globe {
     color: #ffffff; 
-    margin-left: -100px;
-    margin-right: -15px;
-    margin-top: -2px;
     font-size: 18pt;
+}
+
+.this-home{
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .Home_TL {
