@@ -94,21 +94,48 @@ body{
     margin-left: 100px;
 }
 
-.fa-globe {
-    color: #ffffff; 
-    font-size: 18pt;
-}
-
-.this-home{
+.this-home {
     font-size: 12pt;
     font-weight: bold;
     color: #ffffff;
 }
 
+//User avatar and username: Nav display
+.this-nav-user {
+    margin-left: 300px;
+    margin-right: -155px;
+    margin-top: 11px;
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+.this-user {
+    margin-top: 4px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.this-globe {
+    margin-top: -30px;
+    margin-left: 150px;
+    font-size: 20pt;
+}
+
+.this-grav {
+    margin-left: 180px;
+    margin-top: -35px;
+    font-size: 17pt;
+}
+
+.this-user-avatar {
+    
+}
+
 .Home_TL {
     font-size: 11pt;
     font-weight: bold;
-    color: white;
+    color: black;
     margin-left: 25px;
     margin-top: -18px;
 }
@@ -346,7 +373,7 @@ input.form-control {
 
 .post-links {
     text-align: left;
-    margin-left: 25px;
+    margin-left: 240px;
 }
 
 
@@ -604,6 +631,22 @@ input.form-control {
     
 }
 
+.rec-panel-top {
+    background: transparent;
+}
+
+.panel-margin-container {
+    background: transparent;
+}
+
+.rec-container {
+    background: transparent;
+}
+
+.rec-content {
+    background: transparent;
+}
+
 .rec-guide {
-    
+    margin-left: -30px;
 }

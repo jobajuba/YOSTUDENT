@@ -36,22 +36,35 @@
       
       <ul class="nav navbar-nav navbar-left">
         <li>
-          <div class="this-nav-home">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-            <span class="this-home">
-              Home
-            </span>
+          <div class="panel this-nav-user">
+            <div class="this-user" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span><%= current_user.username %></span>
+              </a>
+            </div>
+            
+            <div class="this-globe" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class=""><i class="fa fa-globe" aria-hidden="true"></i></span>
+              </a>
+            </div>
+            
+            <div class="this-grav" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class=""><i class="fa fa-grav" aria-hidden="true"></i></span>
+              </a>
+            </div> 
+          
           </div>
+          
+          
+            
+          
+          
+        
         </li>
         
-        <li>
-          <div class="this-nav-user">
-            
-            <span class="this-user">
-              <%= User.find(@p.user_id).username %>
-            </span>
-          </div>
-        </li>
+        
         
       </ul>
       
