@@ -146,25 +146,6 @@ body{
     
 }
 
-.fa-th {
-    margin-left: -4px;
-    color: blue;
-    font-size: 25pt;
-}
-
-//Navbar icons explore
-.material-explore {
-    color: #ffffff; 
-    font-size: 18pt;
-}
-
-.fa-compass {
-    margin-left: -100px;
-    margin-right: -15px;
-    margin-top: -2px;
-    font-size: 25pt;
-}
-
 
 //Navbar icons recommended
 .material-recommended {
@@ -179,9 +160,10 @@ body{
 }
 
 //Navbar dropdown caret
-.material-caret {
+.this-drop {
     color: #fffff;
     font-size: 20pt;
+    margin-left: 150px;
 }
 
 
