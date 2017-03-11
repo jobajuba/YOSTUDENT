@@ -129,7 +129,12 @@ body{
 }
 
 .this-user-avatar {
-    
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .Home_TL {
@@ -160,10 +165,13 @@ body{
 }
 
 //Navbar dropdown caret
-.this-drop {
+.material-caret {
     color: #fffff;
     font-size: 20pt;
-    margin-left: 150px;
+}
+
+.this-drop {
+    
 }
 
 
@@ -355,7 +363,7 @@ input.form-control {
 
 .post-links {
     text-align: left;
-    margin-left: 240px;
+    margin-left: -21px;
 }
 
 
@@ -495,11 +503,6 @@ input.form-control {
     color: rgba(127,220,136,1);
     opacity: 1;
 }
-
-
-
-
-
 
 
 

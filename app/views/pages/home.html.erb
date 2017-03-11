@@ -1,8 +1,13 @@
-<script>
-    
-    
-    
-</script>
+<style type="text/css">
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: none;
+  color:            blue;
+  } 
+
+</style>
 
 
 <div class="row container-fluid">
@@ -15,7 +20,9 @@
                     </div>
                 
                     <div class="col-sm-2 user-name-home"> 
-                        <%= current_user.username %>
+                        <a class="" accesskey="" data-gt="" href="" title="" data-testid="" ><img class="" src="" alt="" id="">
+                            <span><%= current_user.username %></span>
+                        </a>
                     </div>
                     
                     <div class="pop-tab">
@@ -109,10 +116,8 @@
                     
                     <div class="col-sm-12">
                         <p> 
-                            <span class="post-links">
+                            <div class="post-links">
                                 
-                                
-                            
                                 <span class="reply-icon">
                                     <i class="fa fa-reply" aria-hidden="true"></i>
                                     <span class="reply-text">Like</span>
@@ -131,7 +136,7 @@
                                     <span class="like-anc">More</span>
                                 </span>
                                 
-                            </span>
+                            </div>
                         </p>
                     </div>
                     
