@@ -29,4 +29,17 @@ class PagesController < ApplicationController
     @posts = Post.all.where("user_id =?", User.find_by_username(params[:id]).id)
     @newPost = Post.new
   end
+  
+   #back-end code for pages/activity
+  def activity
+  end
+  
+   #back-end code for pages/workspace
+  def grav
+  end
+  
+   #back-end code for pages/notifications
+  def noti
+  end
+  
 end

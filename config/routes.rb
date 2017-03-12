@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'explore' => 'pages#explore'
   get '/user/:id' => 'pages#profile'
   get 'grav' => 'pages#grav'
+  get 'activity' => 'pages#activity'
+  get 'noti' => 'pages#noti'
   
   
   

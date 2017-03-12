@@ -121,15 +121,26 @@ body{
 }
 
 .this-ci {
-    margin-left: 100px;
+    
 }
 
 //Navbar icons
-.this-1b {
+.this-cl {
     font-size: 22px;
     font-weight: bold;
     color: #ffffff;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 }
+
+.this-cl:hover {
+    color: black;
+    background: none;
+}
+
 
 //Navbar icon color
 .this-cl {
