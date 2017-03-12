@@ -35,35 +35,46 @@
       
       
       <ul class="nav navbar-nav navbar-left">
-        <li>
-          <div class="panel this-nav-user">
-            <div class="this-user" role="group" aria-label="..." data-click="">
-              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
-                <span><%= current_user.username %></span>
+        <li class="this-ci">
+          <div class="this-ci">
+            <li class="this-1b" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="/home" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class="this-cl">
+                  <i class="fa fa-globe" aria-hidden="true"></i>
+                </span>
               </a>
-            </div>
+            </li>
             
-            
-            
-            <div class="this-globe" role="group" aria-label="..." data-click="">
-              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
-                <span type="" class=""><i class="fa fa-globe" aria-hidden="true"></i></span>
+            <li class="this-1b" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="/explore" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class="this-cl">
+                  <i class="fa fa-compass" aria-hidden="true"></i>
+                </span>
               </a>
-            </div>
+            </li>
+            
+            <li class="this-1b" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="/activity" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class="this-cl">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                </span>
+              </a>
+            </li>
             
             <!-- Nav-User-workstation -->
-            <div class="this-grav" role="group" aria-label="..." data-click="">
-              <a class="" accesskey="" data-gt="" href="" title="" data-testid=""><img class="" src="" alt="" id="">
-                <span type="" class=""><i class="fa fa-grav" aria-hidden="true"></i></span>
+            <li class="this-1b" role="group" aria-label="..." data-click="">
+              <a class="" accesskey="" data-gt="" href="/grav" title="" data-testid=""><img class="" src="" alt="" id="">
+                <span type="" class="this-cl">
+                  <i class="fa fa-grav" aria-hidden="true"></i>
+                </span>
               </a>
-            </div> 
-            
+            </li> 
             
             <!-- Nav-dropdown menu -->
-            <div class="this-drop"  roll="group"  aria-label="..." data-click="">
-              <li class="this-drop">
-                <a class="" accesskey="" data-toggle="dropdown" data-gt="" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-caret-down material-caret" style aria-hidden="true"></i>
+            <li class="this-1b" roll="group" aria-label="..." data-click="">
+              
+                <a class="this-caret" accesskey="" data-toggle="dropdown" data-gt="" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span type="" class="this-cl"> <img class="img-rounded user-av1" src="/icon.png"> <i class="fa fa-caret-down" style aria-hidden="true"></i></span>
                 </a>
                 
                 <ul class="dropdown-menu">
@@ -87,21 +98,10 @@
                   <li><a href="#">Account</a></li>
                   <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
                   <li><%= link_to('Log Out', destroy_user_session_path, :method => :delete) %></li>
-                </ul>
-              </li>  
-            </div>
-
+                </ul>  
+            </li>
           </div>
-          
-          
-            
-          
-          
-        
         </li>
-        
-        
-        
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
