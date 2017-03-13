@@ -120,7 +120,8 @@ body{
     
 }
 
-.this-ci {
+
+.this-cl {
     
 }
 
@@ -137,7 +138,7 @@ body{
 }
 
 .this-cl:hover {
-    color: black;
+    color: #08708a;
     background: none;
 }
 
@@ -155,6 +156,11 @@ body{
 .user-av1 {
     height: 20px;
     width: 20px;
+    margin-top: -6px;
+}
+
+.this-caret {
+    
 }
 
 //Navbar Search
@@ -301,26 +307,18 @@ input.form-control {
     margin-left: 5px;
     margin-right: 5px;
     opacity: 0.4;
-}
-
-.reply-text:hover {
-    color: rgba(21,221,234,1);
-    opacity: 1;
+    color: 	#757575;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 }
 
 .reply-icon:hover {
-    color: rgba(21,221,2347,1);
+    color: 	#08708a;
     opacity: 1;
 }
-
-.reply-reply:hover{
-     color: rgba(21,221,2347,1);
-    opacity: 1;
-}
-
-
-
-
 
 
 //like icon and text
@@ -328,26 +326,19 @@ input.form-control {
     margin-left: 5px;
     margin-right: 5px;
     opacity: 0.4;
+    color: 	#757575;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 }
 
-.like-text:hover {
-    color: rgba(244,86,77,1);
-    opacity: 1;
-}
 
 .like-icon:hover {
-    color: rgba(244,86,77,1);
+    color: #fd4e58;
     opacity: 1;
 }
-
-.fa-heart:hover {
-    color: rgba(244,86,77,1);
-    opacity: 1;
-}
-
-
-
-
 
 
 //share icon and text
@@ -355,21 +346,18 @@ input.form-control {
     margin-left: 10px;
     margin-right: 10px;
     opacity: 0.4;
-}
-
-.share-text:hover {
-    color: rgba(23,220,195,1);
-    opacity: 1;
+    color: 	#757575;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 }
 
 .share-icon:hover {
-    color: rgba(23,220,195,1);
+    color: 	#f2d96f;
     opacity: 1;
 }
-
-
-
-
 
 
 //more icon and text
@@ -377,21 +365,20 @@ input.form-control {
     margin-left: 10px;
     margin-right: 10px;
     opacity: 0.4;
+    color: 	#757575;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 }
 
-.more-text:hover {
-    color: rgba(138,43,226,1);
-    opacity: 1;
-}
+
 .more-icon:hover {
-    color: rgba(138,43,226,1);
+    color:	#de82ff;
     opacity: 1;
 }
 
-.fa-bars:hover {
-    color: rgba(138,43,226,1);
-    opacity: 1;
-}
 
 
 
@@ -559,4 +546,14 @@ input.form-control {
 
 .rec-guide {
     margin-left: -30px;
+}
+
+
+//Profile
+
+
+//Banner
+.profile-b1 {
+    width: 100%;
+    position: center;
 }

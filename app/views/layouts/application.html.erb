@@ -12,17 +12,22 @@
   
 </head>
 <body>
-<%= render '/layouts/nav' %>
-
-</div>
-
-<div class="container">
   
-  <span class="notice"><%= notice %></span>
-  <span class="alert"><%= alert %></span>
+  <%= render '/layouts/nav' %>
+    
+  <% if params[:id] != nil %>
+    <% @url= '/user/' + params[:id] %>
+    <% if current_page?(@url) %>
+      <img src="/bg.jpg" class="profile-b">
+    <% end %>
+  <% end %>  
   
-<%= yield %>
-</div>
-
+  <div class="container">
+    <span class="notice"><%= notice %></span>
+    <span class="alert"><%= alert %></span>
+    
+    <%= yield %>
+    
+  </div>
 </body>
 </html>
