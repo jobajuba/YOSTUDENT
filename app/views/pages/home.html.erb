@@ -94,7 +94,11 @@ a:link    {
                     
                     <div class="col-sm-10">
                         <p class="post-title">
-                            <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
+                            <a href="/user/<%= current_user.username %>">
+                                <span class="post-owner-profile">
+                                    <%= User.find(@p.user_id).username %>
+                                </span> 
+                            </a>
                             <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
                         </p>
                         <p class="content-container">
@@ -144,6 +148,12 @@ a:link    {
             </div>    
         <% end %>
     </div>
+    
+    <script>
+        $(document).ready(function() {
+        $("#panel-top").tableHeadFixer({"head" : false, "right" : false}); 
+    });
+    </script>
         
  
      <!-- Right button group Panel 1 begins here -->
@@ -217,24 +227,7 @@ a:link    {
             </div>
         </div>
         
-        <!-- Sub-panel -->
-        <div class="panel fixed">
-            <div class="panel-body panel-margin-container ad-panel">
-                 <div class="rec-panel">
-                   <div class="rec-container">
-                       <div class="rec-content">
-                           <ul>
-                                <span class="rec-guide">
-                                relevant ads
-                                <hr class="rec-guide">
-                            </ul>
-                        </div>
-                    </div>
-                </div>    
-                
-                
-            </div>
-        </div>
+        
     </div>
 </div>
 

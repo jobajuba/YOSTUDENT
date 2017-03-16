@@ -125,6 +125,8 @@ body{
     
 }
 
+
+
 //Navbar icons
 .this-cl {
     font-size: 22px;
@@ -159,13 +161,33 @@ body{
     margin-top: -6px;
 }
 
+.this-1b {
+    border-radius: 1px;
+    background: #FFC04C;
+}
+
 .this-caret {
-    
+    border-radius: 1px;
+    background: #FFC04C;
+}
+
+.this-caret:hover {
+    border-radius: 1px;
+    background: #FFD27F;    
+}
+
+//Navbar caret menu dropdown on hover
+li.db1:hover > ul.dropdown-menu{
+    display: block;
+    padding: 10px;
 }
 
 //Navbar Search
 input.form-control {
     background-color:  rgba(238,100,54,0.10);
+}
+
+.form-control { 
 }
 
 
@@ -532,6 +554,10 @@ input.form-control {
     background: transparent;
 }
 
+.panel-top {
+    
+}
+
 .panel-margin-container {
     background: transparent;
 }
@@ -556,4 +582,30 @@ input.form-control {
 .profile-b1 {
     width: 100%;
     position: center;
+}
+
+.icon-bar {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    font-size: auto;
+}
+
+
+//WebRTC Stream
+.pri-cam {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 1px solid 	rgba(41,136,223,0.3);
+    margin: 0 auto;
+}
+
+.sec-cam {
+    width: 140px;
+    height: 140px;
+    background: transparent;
+    border: 1px solid 	rgba(41,136,223,0.3);
+    margin: 10px auto;
 }
