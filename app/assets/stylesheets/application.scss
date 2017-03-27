@@ -162,19 +162,13 @@ body{
 }
 
 .this-1b {
-    border-radius: 1px;
-    background: #FFC04C;
+   
 }
 
 .this-caret {
     border-radius: 1px;
-    background: #FFC04C;
 }
 
-.this-caret:hover {
-    border-radius: 1px;
-    background: #FFD27F;    
-}
 
 //Navbar caret menu dropdown on hover
 li.db1:hover > ul.dropdown-menu{
@@ -608,4 +602,20 @@ input.form-control {
     background: transparent;
     border: 1px solid 	rgba(41,136,223,0.3);
     margin: 10px auto;
+}
+
+
+//Application.HTML.erb User Profile Banner
+.Profile-BG {
+    width: 100%;
+    opacity: 0.8;
+    margin-bottom: -10%;
+    margin-top: -21px;
+}
+
+.Profile-BG:Hover {
+    width: 100%;
+    opacity: 0.7;
+    margin-bottom: -10%;
+    margin-top: -21px;
 }

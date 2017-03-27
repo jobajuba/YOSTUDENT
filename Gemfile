@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "paperclip", "~> 5.0.0"
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'puma'

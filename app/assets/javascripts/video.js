@@ -1,5 +1,3 @@
-
-
 (function () {
     var video = document.getElementById('webrtc-cam'),
         vendorUrl = window.URL || window.webkitURL;
