@@ -68,8 +68,8 @@
 }
 
 .panel-top {
-    margin-top: 0px;
-    opacity: 0.9;
+    margin-top: 0px auto;
+    opacity: 0.9 auto;
 }
 
 body{
@@ -483,8 +483,11 @@ input.form-control {
 }
 
 .this-post-btn {
-    width: auto;
-    height: auto;
+    max-width: auto;
+    max-height: auto;
+    background: 0.4;
+    border: none;
+    overflow: hidden;
 }
 
 .form-controller {
@@ -608,14 +611,14 @@ input.form-control {
 //Application.HTML.erb User Profile Banner
 .Profile-BG {
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     margin-bottom: -10%;
     margin-top: -21px;
 }
 
 .Profile-BG:Hover {
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
     margin-bottom: -10%;
     margin-top: -21px;
 }
