@@ -2,45 +2,38 @@
   
 </script>
 
-<div class="panel panel-default panel-top">
-  <div class="panel-body form-controller">  
- 
-    <div class="col-sm-10 post-form">
-        <%= form_for(@newPost) do |f| %>
-          <center>
-            
-            <div class="field" style="margin-left: -60px; background: white; width: 130%;">
-              <%= f.text_field :content, autofocus: true, class: "form-control" %>
-              
-              <span class="post-submit-button" style="float: right">  
-                <%= f.submit "Post", class: "btn btn-submit" %>
-              </span>
-            </div>
-            
-          </center>
-        <% end %>
+<div class="panel panel-default panel-top Fnd-bg">
+  <div class="Fnd-01">
+    <div class="Fnd-02">
+      <i class="fa fa-pencil-square-o" aria-hidden="true" style="border-right:medium black solid; height:13px;" > Make a new post &emsp;</i>&emsp;
+      <i class="fa fa-share-square-o" aria-hidden="true"> Share with the world</i>
     </div>
+    
+    <div class="Fnd=03">
+      <div class="col-sm-1">
+        <i>
+        <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
+        
+        Let's get started
+        </i>
+      </div>
+    </div>
+    
+    <div class="Fnd=04">
+      
+      <i class="fa fa-video-camera" aria-hidden="true"></i>
+      
+      <i class="fa fa-camera" aria-hidden="true"></i>
+      
+      <i class="fa fa-headphones" aria-hidden="true"></i>
+      
+      <i class="fa fa-file-text" aria-hidden="true"></i>
+      
+      <i class="fa fa-font" aria-hidden="true">
+        <i class="fa fa-bold" aria-hidden="true"></i>
+      </i>  
+      
+    </div>
+    
   </div>
-  
-  <div class="col-sm-11">
-        
-    <div class="tips-btn">  
-    <p> 
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary this-post-btn"><i class="fa fa-headphones" aria-hidden="true"></i> Audio</button>
-        
-        <!-- Indicates a successful or positive action -->
-        <button type="button" class="btn btn-success this-post-btn"><i class="fa fa-video-camera" aria-hidden="true"></i> Video</button>
-        
-        <!-- Contextual button for informational alert messages -->
-        <button type="button" class="btn btn-info this-post-btn"><i class="fa fa-file-text-o" aria-hidden="true"></i> Text</button>
-        
-        <!-- Indicates caution should be taken with this action -->
-        <button type="button" class="btn btn-danger this-post-btn"><i class="fa fa-camera-retro" aria-hidden="true"></i> Image</button>
-    </p>    
-    </div>
-  </div>     
 </div>    
-
-
-
