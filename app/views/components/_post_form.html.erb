@@ -1,61 +1,160 @@
 <div class="panel panel-default panel-top Fnd-bg">
 
-  <div class="Fnd-01">
-    <i class="fa fa-pencil-square-o" aria-hidden="true" style="border-right:medium black solid; height:13px;" > Make a new post &emsp;</i>&emsp;
-    <i class="fa fa-share-square-o" aria-hidden="true"> Share with the world</i>
+  
+  <div class="icon-group">
+    <div class="btn-group new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
+      <nav class="post-option" id="post-option" role="menu">
+        
+          <!-- Modal Video -->
+        <a class="btn post-item-vid" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalVideo">
+          <i class="fa fa-video-camera post-icon-vid post-item" aria-hidden="true"></i>	
+          <br><span class="post-icon-label">Video</span>
+        </a>
+        
+          <!-- Modal Headphones -->
+        <a class="btn post-item-ph" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalHeadphones">
+          <i class="fa fa-headphones post-icon-ph post-item" aria-hidden="true"></i>	
+          <br><span class="post-icon-label">Music</span>
+        </a>
+        
+        
+        <!-- Modal Text -->
+        <a class="btn post-item" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalText">
+          <i class="fa fa-file-text post-icon post-item" aria-hidden="true"></i>	
+          <br><span class="post-icon-label">Text</span>
+        </a>
+        
+        
+        <!-- Modal Camera -->
+        <a class="btn post-item-cam" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalCamera">
+          <i class="fa fa-camera-retro post-icon-cam post-item" aria-hidden="true"></i>	
+          <br><span class="post-icon-label">Photo</span>
+        </a>
+        
+        
+        <!-- Modal Site -->
+        <a class="btn post-item-site" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalSite">
+          <i class="fa fa-external-link post-icon-site post-item" aria-hidden="true"></i>	
+          <br><span class="post-icon-label">Link</span>
+        </a>
+      
+        
+      </nav>
+    </div>
   </div>
-
-<hr class="hr-01">
-
-  <div class="new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
-    <nav class="post-option" id="post-option" role="menu">
-      <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-file-text post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Text
-          </span>
-        </i>
-      </a>
-      
-       <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-music post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Music
-          </span>
-        </i>
-      </a>
-      
-       <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-pause post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Video
-          </span>
-        </i>
-      </a>
-      
-       <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-file-text post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Text
-          </span>
-        </i>
-      </a>
-      
-       <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-file-text post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Text
-          </span>
-        </i>
-      </a>
-      
-       <a class="post-item" id="new-post-item" role="menu-item" data-post-type="regular" deta-post-endpoint="text">
-        <i class="fa fa-file-text post-icon-text" aria-hidden="true" style="opacity: 1; transform: scale(1) translateY(0px);">
-          <span class="new-post-item" style="opacity: 1; transform: translateY(0px);">
-            Text
-          </span>
-        </i>
-      </a>
-    </nav>
+  
+  <div class="text-group"> 
+  
   </div>
+  
 </div>    
+
+
+
+
+<!-- Modal Text -->
+<div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+        <div class="Fnd-01">
+          <i class="fa fa-pencil-square-o" aria-hidden="true" style="border-right:medium black solid; height:13px;" > Make a new post &emsp;</i>&emsp;
+          <i class="fa fa-share-square-o" aria-hidden="true"> Share with the world</i>
+        </div>
+        </h4>
+      </div>
+      <%= form_for(@newPost) do |f| %>
+      <div class="modal-body">
+      <div class="field" style="margin-left: 0px; background: none; width: 100%; height: 200%;">
+      <%= f.text_field :content, autofocus: true, class: "form-control" %>
+      </div>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <%= f.submit "Post", class: "btn btn-submit" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal Camera -->
+<div class="modal fade" id="modalCamera" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Camera
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Video -->
+<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Video
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Headphones -->
+<div class="modal fade" id="modalHeadphones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Headphones
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Headphones -->
+<div class="modal fade" id="modalSite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Link
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

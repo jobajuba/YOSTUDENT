@@ -182,6 +182,7 @@ input.form-control {
 }
 
 .form-control { 
+    background: none;
 }
 
 
@@ -624,18 +625,168 @@ input.form-control {
 }
 
 .Fnd-bg {
-    background-color: rgba(255,165,0,0.1);
+     background-color: rgba(255,255,255,1);
 }
 
 .Fnd-01 {
-    height: 140px;
     margin-left: 12px;
-    margin-top: 10px;
-    margin-bottom: 8px;
 }
+ 
 
 .hr-01 {
-    margin-top: -118px;
-    
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
+
+.icon-group {
+    background-color: rgba(255,255,255,1);
+    height: 75px;
+}
+
+.new-post-button {
+    margin-left: 2%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+.icon-group {
+    margin-bottom: 20px;
+}
+
+//Post form text field
+.field {
+    height: 200%;
+}
+
+.btn-submit {
+    background: rgba(59,89,152,1);
+    border: none;
+    color: white
+}
+
+//Post form icons
+//Text icon
+.post-icon {
+    font-size: 50px;
+    opacity: 0.8;
+    color: 	rgba(51,51,51,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon:hover {
+    opacity: 1;
+    color: 	rgba(51,51,51,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+//Photo Icon
+.post-icon-cam {
+    font-size: 50px;
+    opacity: 0.8;
+    color: 	rgba(203,66,72,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon-cam:hover {
+    opacity: 1;
+    color: 	rgba(203,66,72,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+//Video Icon
+.post-icon-vid {
+    font-size: 50px;
+    opacity: 0.8;
+    color: rgba(219,106,48,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon-vid:hover {
+    opacity: 1;
+    color: 	rgba(219,106,48,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+
+//Headphone Icon
+.post-icon-ph {
+    font-size: 50px;
+    opacity: 0.8;
+    color: rgba(50,173,132,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon-ph:hover {
+    opacity: 1;
+    color: 	rgba(50,173,132,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+//Site Icon
+.post-icon-site {
+    font-size: 50px;
+    opacity: 0.8;
+    color: rgba(63,180,231,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon-site:hover {
+    opacity: 1;
+    color: 	rgba(63,180,231,1);
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.post-icon-label {
+    margin-top: 50px;
+    color: rgba(129,129,129,1);
+    font-size: 125%;
+}
+
+.post-item {
+    margin-left: 1%;
+}
