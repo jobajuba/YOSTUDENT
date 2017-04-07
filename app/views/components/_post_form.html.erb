@@ -43,17 +43,31 @@
     </div>
   </div>
   
+   <div class="icon-group">
+    <div class="btn-group new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
+      <nav class="post-option" id="post-option" role="menu">
+        
+        <%= form_for(@newPost) do |f| %>
+        <%= f.text_field :content, autofocus: true, class: "form-modal" %>
+        <% end %>
+          
+      </nav>
+    </div>
+  </div>
+  
   <div class="text-group"> 
   
   </div>
   
 </div>    
 
-
-
+<!-- Modal atributes -->
+<script>
+  
+</script>
 
 <!-- Modal Text -->
-<div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:; height:;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
