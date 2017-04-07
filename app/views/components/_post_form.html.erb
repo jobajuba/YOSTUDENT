@@ -1,17 +1,28 @@
 <div class="panel panel-default panel-top Fnd-bg">
 
-  
-  <div class="icon-group">
+   <div class="icon-group-top">
     <div class="btn-group new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
       <nav class="post-option" id="post-option" role="menu">
         
-          <!-- Modal Video -->
+        <i class="fa fa-pencil-square-o create-a-new-post" aria-hidden="true"> Create a new post </i>&nbsp;
+        <span class="divider"> | </span>
+        <i class="fa fa-share-square-o share-with-the-world" aria-hidden="true"> Share with the world </i>
+      
+      </nav>
+    </div>
+  </div>
+  
+  <div class="icon-group-sub">
+    <div class="btn-group new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
+      <nav class="btn-group post-option" id="post-option" role="menu">
+        
+        <!-- Modal Video -->
         <a class="btn post-item-vid" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalVideo">
           <i class="fa fa-video-camera post-icon-vid post-item" aria-hidden="true"></i>	
           <br><span class="post-icon-label">Video</span>
         </a>
         
-          <!-- Modal Headphones -->
+        <!-- Modal Headphones -->
         <a class="btn post-item-ph" id="new-post-item" role="menu-item" data-post-type="regular" style="text-decoration:none;" deta-post-endpoint="text" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalHeadphones">
           <i class="fa fa-headphones post-icon-ph post-item" aria-hidden="true"></i>	
           <br><span class="post-icon-label">Music</span>
@@ -43,17 +54,6 @@
     </div>
   </div>
   
-   <div class="icon-group">
-    <div class="btn-group new-post-button" id="new-post" data-subview="" style="display: block; opacity: 1">
-      <nav class="post-option" id="post-option" role="menu">
-        
-        <%= form_for(@newPost) do |f| %>
-        <%= f.text_field :content, autofocus: true, class: "form-modal" %>
-        <% end %>
-          
-      </nav>
-    </div>
-  </div>
   
   <div class="text-group"> 
   
