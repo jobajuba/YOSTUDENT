@@ -465,6 +465,17 @@ input.form-control {
 //Post form and button icons. 
 .pop-tab {
     margin-top: 80px;
+    margin-left: -10px;
+}
+
+.list-group-item {
+    border-top: 0 none;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
+
+.hr-03 {
 }
 
 .act-tab {
@@ -647,22 +658,12 @@ input.form-control {
     margin-left: 12px;
 }
  
-
-.hr-01 {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 .Fnd-bg {
-     background-color: rgba(255,255,255,0.1);
+     background-color: rgba(255,219,153,0.1);
 }
 
 .icon-group-top {
-    background: rgba(200,210,127,0.1);
+    background: rgba(255,219,153,0.1);
     height: 35px;
     display: flex;
     margin-right: 0 auto;
@@ -670,7 +671,7 @@ input.form-control {
 }
 
 .icon-group-sub {
-    background: rgba(200,210,127,0.1);
+    background: rgba(255,219,153,0.1);
     height: 75px;
     display: flex;
     margin-right: 0 auto;
@@ -696,6 +697,22 @@ input.form-control {
 .share.with.the.world {
     margin-left: 0px;
 }
+
+.hr-01 {
+    background-color: none;
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    height: 2px;
+	display: block;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
 
 //Post form text field
 .field {
