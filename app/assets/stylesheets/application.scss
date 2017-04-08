@@ -463,21 +463,6 @@ input.form-control {
 
 
 //Post form and button icons. 
-.pop-tab {
-    margin-top: 80px;
-    margin-left: -10px;
-}
-
-.list-group-item {
-    border-top: 0 none;
-    border-bottom: 0 none;
-    border-left: 0 none;
-    border-right: 0 none;
-}
-
-.hr-03 {
-}
-
 .act-tab {
     margin-top: 150px;
 }
@@ -538,25 +523,31 @@ input.form-control {
 
 //User info home panel
 .user-avatar-home {
-    height: 60px;
-    width: 60px;
-    background-color: transparent;
+    height: 50px;
+    width: 50px;
     margin-left: -20px;
-    margin-top: -3px;
+    margin-top: -15px;
+    border: 2px solid;
+    border-color: rgba(174,174,174,1);
 }
 
 .user-name-home {
-    margin-top: 30px;
-    margin-left: 15px;
+    margin-top: -5px;
+    margin-left: 10px;
     text-align: left;
 }
 
+.pop-tab {
+    margin-top: 25px;
+    margin-left: -10px;
+}
 
-
-
-
-
-
+.list-group-item {
+    border-top: 1 none;
+    border-bottom: 1 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
 
 
 //Right button group Panel 1
