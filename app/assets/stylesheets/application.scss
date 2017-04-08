@@ -12,7 +12,6 @@
  *
  */
 
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
@@ -464,7 +463,8 @@ input.form-control {
 
 //Post form and button icons. 
 .act-tab {
-    margin-top: 150px;
+    margin-top: 20px;
+    margin-left: -5px;
 }
 
 .post-form {
@@ -529,6 +529,7 @@ input.form-control {
     margin-top: -15px;
     border: 2px solid;
     border-color: rgba(174,174,174,1);
+    border-radius: 2px;
 }
 
 .user-name-home {
@@ -536,19 +537,6 @@ input.form-control {
     margin-left: 10px;
     text-align: left;
 }
-
-.pop-tab {
-    margin-top: 25px;
-    margin-left: -10px;
-}
-
-.list-group-item {
-    border-top: 1 none;
-    border-bottom: 1 none;
-    border-left: 0 none;
-    border-right: 0 none;
-}
-
 
 //Right button group Panel 1
 .high-bar{
