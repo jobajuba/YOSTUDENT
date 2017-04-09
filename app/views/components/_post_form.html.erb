@@ -61,11 +61,13 @@
 
 <!-- Modal atributes -->
 <script>
-  
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
 </script>
 
 <!-- Modal Text -->
-<div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:; height:;">
+<div class="modal " id="modalText" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:; height:;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -96,7 +98,7 @@
 
 
 <!-- Modal Camera -->
-<div class="modal fade" id="modalCamera" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal " id="modalCamera" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -115,7 +117,7 @@
 </div>
 
 <!-- Modal Video -->
-<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal " id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -134,7 +136,7 @@
 </div>
 
 <!-- Modal Headphones -->
-<div class="modal fade" id="modalHeadphones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal " id="modalHeadphones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -153,7 +155,7 @@
 </div>
 
 <!-- Modal Headphones -->
-<div class="modal fade" id="modalSite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal " id="modalSite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

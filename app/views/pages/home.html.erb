@@ -1,15 +1,3 @@
-<style type="text/css">
-a:link    {
-  /* Applies to all unvisited links */
-  text-decoration:  none;
-  font-weight:      bold;
-  background-color: none;
-  color:            blue;
-  } 
-
-</style>
-
-
 <div class="row container-fluid">
     <div class="col-xs-3 panel-top">
         <div class="panel panel-default">
@@ -76,7 +64,6 @@ a:link    {
                 
                 <div class="feed">
                 </div>
-                
             </div>
         </div>
     </div>
@@ -106,12 +93,6 @@ a:link    {
                         </p>
                     </div>
                     
-                    <div class="ancor-icon">
-                        <span class="#" data-toggle="tooltip" data-placement="top" title="Anchor workspace" >
-                                <i class="fa fa-anchor" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                 
                     <div class="col-sm-11">
                         <p>
                             <span class="post-tags">Tags</span>
@@ -119,31 +100,23 @@ a:link    {
                     </div>
                     
                     <div class="col-sm-12">
-                        <p> 
-                            <div class="post-links">
+                        <div class="post-links">
+                            <span class="reply-icon">
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                                <span class="reply-text">Reply</span>
+                            </span>
                                 
-                                <span class="reply-icon">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                    <span class="reply-text">Reply</span>
-                                </span>
-                                
-                                <span class="like-icon">
-                                    <i class="fa fa-heart" aria-hidden="true"></i>
-                                    <span class="like-text">Like</span>
-                                </span>
-                                <span class="share-icon">
-                                    <i class="fa fa-retweet" aria-hidden="true"></i>
-                                    <span class="share-text">Share</span>
-                                </span>
-                                <span class="more-icon">
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                    <span class="like-anc">More</span>
-                                </span>
-                                
-                            </div>
-                        </p>
+                            <span class="like-icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span class="like-text">Like</span>
+                            </span>
+                            
+                            <span class="share-icon">
+                                <i class="fa fa-retweet" aria-hidden="true"></i>
+                                <span class="share-text">Share</span>
+                            </span>
+                        </div>
                     </div>
-                    
                 </div>
             </div>    
         <% end %>

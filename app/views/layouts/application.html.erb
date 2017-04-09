@@ -14,20 +14,30 @@
 <body>
   
   <%= render '/layouts/nav' %>
-    
   <% if params[:id] != nil %>
-    <% @url= '/user/' + params[:id] %>
+  <% @url= '/user/' + params[:id] %>
     <% if current_page?(@url) %>
-      <img class="Profile-BG" src="/bg.jpg" class="profile-b">
+      <img class="Profile-BG" src="/bg.jpg">
+      
+      <div class="row">  
+        <div class="col-md-12" class="pro-bar">
+          <div class="container">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6"> 
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <% end %>
   <% end %>  
   
   <div class="container">
     <span class="notice"><%= notice %></span>
     <span class="alert"><%= alert %></span>
-    
     <%= yield %>
-    
   </div>
+  
 </body>
 </html>
