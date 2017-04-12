@@ -343,6 +343,9 @@ input.form-control {
     margin-top: 20px;
 }
 
+.res-icon {
+    background-color: rgba(255,219,153,0.1);
+}
 
 .fa-anchor:hover {
     color: black;
@@ -457,7 +460,12 @@ input.form-control {
 
 //Post form and button icons. 
 .act-tab {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: -5px;
+}
+
+.act-tab-pf {
+    margin-top: 250px;
     margin-left: -5px;
 }
 
@@ -511,7 +519,9 @@ input.form-control {
 
 
 
-
+.ava {
+    background: none;
+}
 
 
 
@@ -528,10 +538,29 @@ input.form-control {
 
 .user-name-home {
     margin-top: -5px;
-    margin-left: 10px;
+    margin-left: 5px;
     text-align: left;
     color: white;
 }
+
+//User avatar profile
+.user-avatar-profile-pf {
+    height: 234px;
+    width: 234px;
+    margin-left: -20px;
+    margin-top: -15px;
+    border: 2px solid;
+    border-color: rgba(174,174,174,1);
+    border-radius: 2px;
+}
+
+.user-name-home-pf {
+    margin-top: 200px;
+    margin-left: -50px;
+    text-align: left;
+    color: white;
+}
+
 
 //Right button group Panel 1
 .high-bar{
@@ -600,7 +629,7 @@ a:link    {
 .Profile-BG {
     width: 100%;
     opacity: 0.9;
-    height: 400px;
+    height: 500px;
     margin-bottom: -10%;
     margin-top: -21px;
     position: center;
@@ -609,7 +638,7 @@ a:link    {
 .Profile-BG:Hover {
     width: 100%;
     opacity: 0.9;
-    height: 400px;
+    height: 500px;
     position: center;
     margin-bottom: -10%;
     margin-top: -21px;
@@ -759,7 +788,7 @@ a:link    {
 
 //Video Icon
 .post-icon-vid {
-    font-size: 60px;
+    font-size: 64px;
     opacity: 0.8;
     color: rgba(219,106,48,1);
     -webkit-transition: color .3s linear;
@@ -834,11 +863,33 @@ a:link    {
     margin-left: 1%;
 }
 
+
 .modal {
     top:64px;
-    position: relative;
+    position: center;
+    
 }
+
+
+@media screen and (min-width: 768px) {
+        .modal-dialog {
+          width: 700px; /* New width for default modal */
+        }
+        .modal-sm {
+          width: 350px; /* New width for small modal */
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .modal-lg {
+          width: 950px; /* New width for large modal */
+        }
+    }
+
 
 .modal:active {
     
+}
+
+.row-block {
+    margin-top: -30px;
 }

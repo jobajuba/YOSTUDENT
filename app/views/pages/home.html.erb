@@ -1,65 +1,133 @@
-<div class="row container-fluid">
+<div class="row container-fluid row-block">
     <div class="col-xs-3 panel-top">
         <div class="panel panel-default">
             <div class="panel-body">
                 <p>
-                    <div class="col-sm-1">
+                    <div class="col-sm-1" >
                         <img class="user-avatar-home" src="/icon.png"></img>
                     </div><br>
                 
                     <div class="col-sm-2 user-name-home"> 
                         <a class="" accesskey="" data-gt="" href="/user/<%= current_user.username %>" title="" data-testid="" ><img class="" src="" alt="" id="">
-                            <span ><%= current_user.username %></span>
+                            <span style="color: black;"><%= current_user.username %></span>
                         </a>
                     </div>
                     
+                     
                 
                     <div class="act-tab">
                         
                         <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color:  #66cdaa; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        </span>
-                        </a>
-                        </li>
-                        
-                                	
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #70b0c3; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="text">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                        </span>
-                        </a>
-                        </li>
-                            
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #f7a868; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Media">
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                        </span>
-                        </a>
-                        </li>
-                                	
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #9c3e60; font-size: 11pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                        </span>
-                        </a>
-                        </li>
-                     
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #9c3e60; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                        <i class="fa fa-archive" aria-hidden="true"></i>
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-hand-o-right" aria-hidden="true"> 
+                        <span style="color: grey;">Followers </span>
+                        </i>
                         </span>
                         </a>
                         </li>
                         </ol>  
                     </div>
                 </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-hand-o-left" aria-hidden="true">
+                        <span style="color: grey;">Following</span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                </p>
+                    
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-sitemap" aria-hidden="true">
+                        <span style="color: grey;"> Organisations </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-handshake-o" aria-hidden="true"> 
+                        <span style="color: grey;">Sponsors</span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-folder-open-o" aria-hidden="true"> 
+                        <span style="color: grey;">Projects </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                </p>
+                
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-heart-o" aria-hidden="true"> 
+                        <span style="color: grey;">Likes </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol> 
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-life-ring" aria-hidden="true"> 
+                        <span style="color: grey;">Endorsed</span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                </p>
+               
                 
                 
                 <div class="feed">
@@ -99,7 +167,7 @@
                         </p>
                     </div>
                     
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 res-icon">
                         <div class="post-links">
                             <span class="reply-icon">
                                 <i class="fa fa-reply" aria-hidden="true"></i>
