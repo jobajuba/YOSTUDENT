@@ -25,6 +25,10 @@
     background-color: rgba(255,141, 0, 1);
     width: 100%;
     border-radius: 0px !important;
+    position: fixed;
+    z-index: 10;
+    max-width: 100%;
+    max-height: 52px;
 }
 
 .navbar-guest {
@@ -73,6 +77,10 @@
 
 body{
     background-color:  rgba(249, 249, 249, 1);
+    white-space: nowrap;
+    position: center;
+    width: 20vw;
+    height: 20vw;
 }
 .navbar-default .navbar-brand {
     color: #ffffff !important;
@@ -411,6 +419,14 @@ input.form-control {
     transition: color .1s linear;
 }
 
+
+//Delete icon/post
+.delete-icon {
+    margin-left: 210px;
+    color: grey;
+    font-size: 140%;
+}
+
 .fa-retweet {
     font-size: 113%;
 }
@@ -675,7 +691,7 @@ a:link    {
 }
  
 .Fnd-bg {
-     background-color: rgba(255,219,153,0.1);
+     background-color: rgba(255,219,153,1);
 }
 
 .icon-group-top {
@@ -892,4 +908,45 @@ a:link    {
 
 .row-block {
     margin-top: -30px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.panel-b {
+    border: none;
+}
+
+.panel-l {
+    position: fixed;
+    margin-top: 75px;
+    margin-left: 143px;
+    max-width: 480px;
+    min-width: 480px;
+}
+
+.panel-c {
+    margin-left: 600px;
+    margin-top: 75px;
+    max-width: 700px;
+    min-width: 700px;
+}
+
+.panel-content {
+    max-width: 900px ;
+    overflow: hidden;
+}
+
+.panel-r {
+    position: fixed;
+    margin-left: 1277px;
+    margin-top: 75px;
+    max-width: 480px;
+    min-width: 480px;
+}
+
+
+@media (max-width: 75em){
+    
 }
