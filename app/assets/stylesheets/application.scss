@@ -33,11 +33,21 @@
 
 .navbar-guest {
     background-color: transparent;
-    width: 100%;
+    max-width: 100vw;
+    min-width: 100vw;
     height: 15%;
     border: 0px;
 }
 
+//Login modal
+
+//Sign up page
+.sign-up-bar {
+    margin-left: 700px;
+    max-width: 10vw;
+    min-width: 10vw;
+    position: fixed;
+}
 
 
 //Sign-in button index
@@ -60,8 +70,6 @@
 }
 
 
-.navbar-guest {
-}
 
 //Nav search
 

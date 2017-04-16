@@ -26,22 +26,27 @@
           </form>
         </li>
       </ul>
-     
-    <ul class="nav navbar-nav navbar-right">
-      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-login">
-        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-          <%= link_to('Sign in', new_user_session_path) %>
-        </div>
-      </li>
-      
-      
-      <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-signup">
-        <div class="btn-group btn-group-sm" role="group" aria-label="...">
-          <%= link_to('Sign up', new_user_registration_path) %>
-        </div>
-      </li>  
-    </ul>
+    
+    <div class=""> 
+      <ul class="nav navbar-nav navbar-right">
+        <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-login" data-toggle="modal" data-target="#Login">
+          
+          <!-- Button trigger modal -->
+          <div class="btn-group btn-group-sm" type="button" role="group" data-toggle="modal" data-target="#Login" >
+            Login
+          </div>
+        </li>
+        
+        
+        <li type="button" STYLE="color: black; font-size: 10pt" class="btn btn-default btn-md navbar-btn-signup">
+          <div class="btn-group btn-group-sm" role="group" aria-label="...">
+            <%= link_to('Sign up', new_user_registration_path) %>
+          </div>
+        </li>  
+      </ul>
+    </div>
     
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
