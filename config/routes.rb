@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   
   #Defined Root URL
   root 'pages#index'
+
   
   #Defines Routes for pages
   get 'home' => 'pages#home'
