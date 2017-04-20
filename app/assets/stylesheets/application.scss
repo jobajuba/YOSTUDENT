@@ -85,15 +85,22 @@ body{
     white-space: nowrap;
     position: center;
 }
+
+.navbar {
+    max-width: 100%;
+    min-width: 100%;
+}
+
 .navbar-default .navbar-brand {
     color: #ffffff !important;
     display: block;
+    background: none;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
     color: #0c5393;
-    background-color:transparent !important;
+    background: none !important;
     display: block;
 }
 
@@ -673,11 +680,8 @@ a:link    {
 }
 
 .icon-bar {
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: auto;
-    font-size: auto;
+    max-width: 250px;
+    min-width: 250px;
 }
 
 
@@ -933,7 +937,7 @@ a:link    {
 
 .panel-body {
     border: none;
-    background: white;
+    background: rgba(255,255,255,1);
 }
 
 .panel-l {
@@ -950,6 +954,7 @@ a:link    {
     margin-top: 69px;
     max-width: 700px;
     min-width: 700px;
+    min-height: 400px;
 }
 
 .panel-r {
@@ -978,4 +983,37 @@ a:link    {
 
 .expl {
     margin-top: 50px;
+}
+
+
+.prof-row {
+    margin-top: 35px;
+}
+
+.post-links-explore {
+    margin-top: -37px;
+}
+
+.explore-icon {
+    font-size: 21px;
+    margin-left: 20px;
+}
+
+.reply-ex {
+    font-weight: bold;
+}
+
+.sub-bar {
+    margin-top: 30px;
+    min-width: 1000%;
+    max-width: 1000%;
+    background: blue;
+}
+
+.panel-top-wrapper {
+    width: 100%;
+}
+
+.panal-sub-wrapper {
+    width: 100%;
 }

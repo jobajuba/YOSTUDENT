@@ -153,6 +153,8 @@
                         <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
                             Current user's active project's mile stones.
+                            <br>
+                            Showed in in chart format.
                         </span>
                         </a>
                         </li>
@@ -178,8 +180,8 @@
         <%= render '/components/post_form' %><br>
         <% for @p in @posts %>
             
-            <div class="panel panel-default content-panel">
-                <div class="panel-body ">       
+            <div class="panel content-panel">
+                <div class="panel-body">       
                     <div class="col-sm-1">
                         <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
                     </div>
