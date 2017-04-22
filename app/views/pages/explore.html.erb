@@ -1,36 +1,44 @@
-   
+<div class="container content-ex">
+    <div class="row">
+    <% for @p in @posts %>
+    
+        <div class="panel">
+            <div class="panel-body content-containter-ex">
+                <section id="">
+                    <article class="">
+                        <%= @p.content %>
+                    </article>
+                </section>
+            </div>
+            <br>
+            <div class="description" style="background: #595959">
+                Discription    
+            </div>
+            <br>        
+            <div class="tags" style="background: #808080">
+                tags
+            </div>
+            <br>
+            <div class="post-links-explore" style="background: #B2B2B2">
+                <span class="explore-icon">
+                    <i class="fa fa-reply" aria-hidden="true"></i>
+                </span>
+                                                    
+                <span class="explore-icon">
+                    <i class="fa fa-heart-o reply-ex" aria-hidden="true"></i>
+                </span>
+                                                    
+                <span class="explore-icon">
+                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                </span>
+                                                    
+                <span class="explore-icon">
+                    <i class="fa fa-trash-o reply-ex" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    <% end %>
+    </div>
+</div>
 
-    <span style="position: absolute; top: 100px; z-index: 2000000000; left: 100px; opacity: 1; transition: opacity 0.13s linear;">
-        <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="min-height: 500px; min-width: 380px; max-width: 380px; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 16px;" tabindex="0" vspace="0" width="100%" id="" name="" src=""></iframe>
-        
-        
-        <div class="content"> 
-        
-        </div>
-        
-        <div class="discription">
-            
-        </div>
-        
-        <div class="tags">
-            
-        </div>
-        
-        <div class="post-links-explore">
-            <span class="explore-icon">
-                <i class="fa fa-reply" aria-hidden="true"></i>
-            </span>
-                                
-            <span class="explore-icon">
-                <i class="fa fa-heart-o reply-ex" aria-hidden="true"></i>
-            </span>
-                                
-            <span class="explore-icon">
-                <i class="fa fa-retweet" aria-hidden="true"></i>
-            </span>
-                                
-            <span class="explore-icon">
-                <i class="fa fa-trash-o reply-ex" aria-hidden="true"></i>
-            </span>
-        
-    </span>
+                      

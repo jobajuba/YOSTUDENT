@@ -82,7 +82,6 @@
 
 body{
     background-color:  rgba(249, 249, 249, 1);
-    white-space: nowrap;
     position: center;
 }
 
@@ -352,6 +351,8 @@ input.form-control {
     margin-left: -15px;
     margin-top: -30px;
 }
+
+
 
 .content-container-profile {
     margin-left: -15px;
@@ -990,6 +991,34 @@ a:link    {
     margin-top: 35px;
 }
 
+
+
+//Explore Page CSS
+
+.content-ex {
+    margin-top: 45px;
+    max-width: 400px;
+}
+
+.content-container-ex {
+    max-width: 700px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.description {
+    
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+.this-container {
+    margin-bottom: 30px;
+}
+
+
 .post-links-explore {
     margin-top: -37px;
 }
@@ -1017,3 +1046,5 @@ a:link    {
 .panal-sub-wrapper {
     width: 100%;
 }
+
+
