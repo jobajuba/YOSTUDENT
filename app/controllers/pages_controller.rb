@@ -42,4 +42,7 @@ class PagesController < ApplicationController
   def noti
   end
   
+  def sticky
+  end
+  
 end
