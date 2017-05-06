@@ -1,7 +1,7 @@
-<div class="row row-block container-fluid">
-    <div class="col-xs-3 panel-top panel-b panel-l">
-        <div class="panel panel-default panel-b">
-            <div class="panel-body panel-b">
+<div class="row container-fluid prof-row">
+    <div class="col-xs-3 panel-top ">
+        <div class="panel panel-default">
+            <div class="panel-body ">
                 <p>
                     <div class="col-sm-1" >
                         <img class="user-avatar-home" src="/icon.png"></img>
@@ -33,115 +33,13 @@
                         
                         </ol>  
                     </div>
-                </p>
                 
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-hand-o-left" aria-hidden="true">
-                        <span style="color: grey;">Following</span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol>  
-                    </div>
-                </p>
-                    
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-sitemap" aria-hidden="true">
-                        <span style="color: grey;"> Partnerships </span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol>  
-                    </div>
-                </p>
-                
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-handshake-o" aria-hidden="true"> 
-                        <span style="color: grey;">Sponsors</span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol>  
-                    </div>
-                </p>
-                
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-folder-open-o" aria-hidden="true"> 
-                        <span style="color: grey;">Projects </span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol>  
-                    </div>
-                </p>
-                
-                
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-heart-o" aria-hidden="true"> 
-                        <span style="color: grey;">Likes </span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol> 
-                    </div>
-                </p>
-                
-                    <div class="act-tab">
-                        
-                        <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-life-ring" aria-hidden="true"> 
-                        <span style="color: grey;">Endorsed</span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        </ol>  
-                    </div>
             </div>
         </div>
         
         
-         <div class="panel panel-default panel-b">
-            <div class="panel-body panel-b">
+         <div class="panel panel-default">
+            <div class="panel-body">
                 
                 <div class="feed">
                     
@@ -172,41 +70,33 @@
                 </div>
             </div>
         </div>
-        
     </div>
 
-       <!-- Center Panel begins here, -->
-    <div class="col-xs-6 panel-c">
-        <%= render '/components/post_form' %><br>
+    <!-- Center Panel begins here, -->
+    <div class="col-xs-6 mid-col panel-center">
+        
+        <%= render '/components/post_form' %><br>       
         <% for @p in @posts %>
             
-            <div class="panel content-panel">
+            <div class="panel panel-default content-panel">
                 <div class="panel-body">       
-                    <div class="col-sm-1">
+                    <div class="col-sm-1 user-avatar-title">
                         <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
                     </div>
                     
                     <div class="col-sm-10">
-                        <p class="post-title">
-                            <a href="/user/<%= User.find(@p.user_id).username %>">
-                                <span class="post-owner-profile">
-                                    <%= User.find(@p.user_id).username %>
-                                </span> 
+                        <div class="post-title">
+                            <a class="" accesskey="" data-gt="" href="/user/<%= User.find(@p.user_id).username %>" title="" data-testid="" >
+                                <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
+                                <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
                             </a>
-                            <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
-                        </p>
-                        <p class="content-container panel-content">
-                            <span class="post-content-profile container-fluid panel-content"><%= @p.content %></span>
-                        </p>
+                        </div>
+                        <div class="content-container-profile">
+                            <span class="post-content-profile container"><%= @p.content %></span>
+                        </div>
                     </div>
                     
-                    <div class="col-sm-11">
-                        <p>
-                            <span class="post-tags">Tags</span>
-                        </p>
-                    </div>
-                    
-                    <div class="col-sm-12 res-icon">
+                    <div class="col-sm-12">
                         <div class="post-links">
                             <span class="reply-icon">
                                 <i class="fa fa-comment" aria-hidden="true"></i>
@@ -222,10 +112,6 @@
                                 <i class="fa fa-retweet" aria-hidden="true"></i>
                                 <span class="share-text">Share</span>
                             </span>
-                            
-                            <span class="delete-icon">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -233,17 +119,13 @@
         <% end %>
     </div>
     
-    <script>
-        $(document).ready(function() {
-        $("#panel-top").tableHeadFixer({"head" : false, "right" : false}); 
-    });
-    </script>
-        
- 
-     <!-- Right button group Panel 1 begins here -->
-    <div class="col-xs-3 panel-top panel-b panel-r">
-        <div class="panel panel-default panel-b">
-            <div class="panel-body panel-margin-container panel-b">
+    
+    
+    
+    
+    <div class="col-xs-3 panel-bottom">
+        <div class="panel panel-default">
+            <div class="panel-body panel-margin-container">
                
                <div class="rec-panel-top">
                    <div class="rec-container">
@@ -312,8 +194,8 @@
         </div>
         
         
-        <div class="panel panel-default panel-b">
-            <div class="panel-body panel-margin-container panel-b">
+        <div class="panel panel-default">
+            <div class="panel-body panel-margin-container">
                
                <div class="rec-panel-top">
                    <div class="rec-container">
@@ -342,9 +224,6 @@
             </div>
         </div>
         
-        
     </div>
 </div>
-
-  
 

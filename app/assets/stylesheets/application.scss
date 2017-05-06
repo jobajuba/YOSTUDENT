@@ -75,10 +75,6 @@
     width: 100%;
 }
 
-.panel-top {
-    margin-top: 0px auto;
-    opacity: 0.9 auto;
-}
 
 body{
     background-color:  rgba(249, 249, 249, 1);
@@ -283,7 +279,25 @@ input.form-control {
     margin-top: -21px;
 }
 
+.panel-top {
+    max-width: 500px;
+    min-width: 500px;
+    margin-left: -200px;
+    position: fixed;
+}
 
+
+.panel-center {
+    width: 700px;
+    margin-left: 280px;
+}
+
+.panel-bottom {
+    max-width: 370px;
+    min-width: 370px;
+    margin-left: 960px;
+    position: fixed;
+}
 
 .post-title {
     text-align: left;
@@ -356,7 +370,9 @@ input.form-control {
 
 .content-container-profile {
     margin-left: -15px;
-    margin-top: -20px;
+    margin-top: -13px;
+    text-align: justify;
+    width: 536px;
 }
 
 .post-tags {
@@ -367,8 +383,8 @@ input.form-control {
 
 .post-links {
     text-align: left;
-    margin-left: 24px;
-    margin-top: 20px;
+    margin-left: 315px;
+    margin-top: 10px;
 }
 
 .res-icon {
@@ -659,6 +675,8 @@ a:link    {
     margin-top: 30px;
 }
 
+.mid-col-home {
+}
 
 //Banner
 //Application.HTML.erb User Profile Banner
@@ -897,32 +915,6 @@ a:link    {
 }
 
 
-.modal {
-    top:64px;
-    position: center;
-    
-}
-
-
-@media screen and (min-width: 768px) {
-        .modal-dialog {
-          width: 700px; /* New width for default modal */
-        }
-        .modal-sm {
-          width: 350px; /* New width for small modal */
-        }
-    }
-    @media screen and (min-width: 992px) {
-        .modal-lg {
-          width: 950px; /* New width for large modal */
-        }
-    }
-
-
-.modal:active {
-    
-}
-
 .row-block {
     margin-top: -30px;
     position: absolute;
@@ -930,11 +922,6 @@ a:link    {
     overflow: hidden;
 }
 
-
-.panel-b {
-    border: none;
-    background: none;
-}
 
 .panel-body {
     border: none;

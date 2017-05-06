@@ -1,59 +1,101 @@
 <div class="row container-fluid prof-row">
-    <div class="col-xs-3 panel-top">
+    <div class="col-xs-3 panel-top ">
         <div class="panel panel-default">
-            <div class="panel-body">
+            <div class="panel-body ">
                 <p>
-                    <div class="col-sm-1 ava">
-                        <img class="user-avatar-profile-pf" src="/icon.png"></img>
+                    <div class="col-sm-1" >
+                        <img class="user-avatar-home" src="/icon.png"></img>
                     </div><br>
                 
-                    <div class="col-sm-2 user-name-home-pf"> 
-                        <a href="/user/<%= current_user.username %>">
-                            <span ><%= current_user.username %></span>
+                    <div class="col-sm-2 user-name-home"> 
+                        <a class="" accesskey="" data-gt="" href="/user/<%= current_user.username %>" title="" data-testid="" ><img class="" src="" alt="" id="">
+                            <span style="color: black;"><%= current_user.username %></span>
                         </a>
                     </div>
                     
+                     
                 
-                    <div class="act-tab-pf">
+                    <div class="act-tab">
+                        
+                        Create a div to contain followers text with max and min width
                         
                         <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color:  #66cdaa; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Audio">
-                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-hand-o-right" aria-hidden="true"> 
+                        <span style="color: grey;">Followers </span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
                         </span>
                         </a>
                         </li>
                         
-                                	
+                        </ol>  
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color: #70b0c3; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="text">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-hand-o-left" aria-hidden="true">
+                        <span style="color: grey;">Following</span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
                         </span>
                         </a>
                         </li>
-                            
+                        </ol>  
+                    </div>
+                </p>
+                    
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color: #f7a868; font-size: 12pt" data-toggle="tooltip" data-placement="bottom" title="Media">
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-sitemap" aria-hidden="true">
+                        <span style="color: grey;"> Partnerships </span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
                         </span>
                         </a>
                         </li>
-                                	
+                        </ol>  
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color: #9c3e60; font-size: 11pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-handshake-o" aria-hidden="true"> 
+                        <span style="color: grey;">Sponsors</span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
                         </span>
                         </a>
                         </li>
-                     
+                        </ol>  
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
                         <li class="active">
                         <a href="#">
-                        <span style="color: #9c3e60; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Image">
-                        <i class="fa fa-archive" aria-hidden="true"></i>
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-folder-open-o" aria-hidden="true"> 
+                        <span style="color: grey;">Projects </span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
                         </span>
                         </a>
                         </li>
@@ -62,37 +104,98 @@
                 </p>
                 
                 
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-heart-o" aria-hidden="true"> 
+                        <span style="color: grey;">Likes </span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol> 
+                    </div>
+                </p>
+                
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-life-ring" aria-hidden="true"> 
+                        <span style="color: grey;">Endorsed</span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+            </div>
+        </div>
+        
+        
+         <div class="panel panel-default">
+            <div class="panel-body">
+                
                 <div class="feed">
+                    
+                    <div class="act-tab">
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color:  #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            Current user's active project's mile stones.
+                            <br>
+                            Showed in in chart format.
+                        </span>
+                        </a>
+                        </li>
+                        </ol>  
+                    </div>
+                    
+                    <h4> </i> Live feeds </h4>
+                    Live feed on projects you're contributing to. 
+                    <br> 
+                    Only visible to current user. 
+                    <br>
+                    Publication requires concent from all parties. 
+                    <br>
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Center Panel begins here, -->
-    <div class="col-xs-6 mid-col">
-       
+    <div class="col-xs-6 mid-col panel-center">
+        
+        <%= render '/components/post_form' %><br>       
         <% for @p in @posts %>
             
             <div class="panel panel-default content-panel">
-                <div class="panel-body ">       
-                    <div class="col-sm-1">
+                <div class="panel-body">       
+                    <div class="col-sm-1 user-avatar-title">
                         <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
                     </div>
                     
                     <div class="col-sm-10">
                         <div class="post-title">
-                            <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
-                            <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
+                            <a class="" accesskey="" data-gt="" href="/user/<%= User.find(@p.user_id).username %>" title="" data-testid="" >
+                                <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
+                                <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
+                            </a>
                         </div>
                         <div class="content-container-profile">
                             <span class="post-content-profile container"><%= @p.content %></span>
                         </div>
-                    </div>
-                    
-                    <div class="col-sm-11">
-                        <p>
-                            <span class="post-tags">Tags</span>
-                        </p>
                     </div>
                     
                     <div class="col-sm-12">
@@ -122,18 +225,107 @@
     
     
     
-    <div class="col-xs-3">
-        <div class="panel panel-default" >   
-            <div class="panel-body">
-               <p>Projects you're following</p>
+    <div class="col-xs-3 panel-bottom">
+        <div class="panel panel-default">
+            <div class="panel-body panel-margin-container">
+               
+               <div class="rec-panel-top">
+                   <div class="rec-container">
+                       <div class="rec-content">
+                           <ul>
+                               <span class="rec-guide">
+                                   Trending
+                                   
+                                   <a>
+                                       <!-- Displayed icon -->
+                                       <span class="rec-icon">
+                                           <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                       </span>
+                                       
+                                       <!-- Displayed name -->
+                                       <span class="rec-display"></span>
+                                   </a>
+                                   <hr class="rec-guide">
+                               </span>
+                               
+                               <span class="rec-guide">
+                                   Recommended Projects
+                                   
+                                   <a>
+                                       <!-- Displayed icon -->
+                                       <span class="rec-icon">
+                                           
+                                           <span class="glyphicons glyphicons-camp-fire"></span>
+                                       </span>
+                                       
+                                       <!-- Displayed name -->
+                                       <span class="rec-display"></span>
+                                   </a>
+                                   <hr class="rec-guide">
+                               </span>
+                               
+                               <span class="rec-guide">
+                                   Active tutors
+                                   
+                                   <a>
+                                       <!-- Displayed icon -->
+                                       <span class="rec-icon"></span>
+                                       
+                                       <!-- Displayed name -->
+                                       <span class="rec-display"></span>
+                                   </a>
+                                   <hr class="rec-guide">
+                               </span>
+                               
+                               <span class="rec-guide">
+                                   Find a sponsors
+                                   
+                                   <a>
+                                       <!-- Displayed icon -->
+                                       <span class="rec-icon"></span>
+                                       
+                                       <!-- Displayed name -->
+                                       <span class="rec-display"></span>
+                                   </a>
+                               </span>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
-    
-        <div class="panel panel-default" >   
-            <div class="panel-body">
-               <p>You Sponsors</p>
+        
+        
+        <div class="panel panel-default">
+            <div class="panel-body panel-margin-container">
+               
+               <div class="rec-panel-top">
+                   <div class="rec-container">
+                       <div class="rec-content">
+                           
+                            <span class="this-sticky">
+                                <span class="this-sticky-container">
+                                    <span class="this-sticky-content">
+                                        <i class="fa fa-sticky-note-o" style="color: #44aacc;" aria-hidden="true"></i>
+                                        Sticky notes. 
+                                        <br>Pop to front on hover. 
+                                        <br>Random color for each note
+                                        <br> Link to view all sticky notes
+                                        
+                                        
+                                        <br><p>Add new note option</p>
+                                    </span>
+                                </span>
+                            </span>
+                           
+                           
+                           
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
+        
     </div>
 </div>
 
