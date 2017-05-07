@@ -195,8 +195,26 @@ li.db1:hover > ul.dropdown-menu{
 }
 
 //Navbar Search
-input.form-control {
-    background-color:  white solid;
+
+.post-container {
+    
+}
+
+.post-box {
+    margin-left: 70px;
+}
+
+.post-action {
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.user-avatar-post {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    margin-left: -5px;
+    margin-top: -3px;
 }
 
 .form-modal { 
@@ -216,12 +234,74 @@ input.form-control {
     margin-bottom: -20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .form-control { 
-    max-width: 400px;
-    min-width: 400px;
-    background: white solid;
+    max-width: 580px;
+    min-width: 580px;
+    background: rgba(255,141, 0, 0.9) solid;
     border-color: none;
+    border-color: rgba(127,127,127,0.3);
 }
+
+.form-transform { 
+    -webkit-transition: all 0.10s ease;  
+    -moz-transition: all 0.10s ease;  
+    -o-transition: all 0.10s ease;  
+    -ms-transition: all 0.10s ease;  
+    transition: all 0.10s ease;
+}
+
+.form-transform-active {
+    max-width: 580px;
+    min-width: 580px;
+    height: 70px;
+    background: rgba(255,141, 0, 0.9) solid;
+    border-color: none;
+    border-color: rgba(127,127,127,0.3);
+    
+}
+
+
+
+.post-action{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Navbar Brand YOSTUDENT USER
@@ -537,7 +617,13 @@ input.form-control {
     margin-bottom: -15px; 
 }
 
-.content-panel {
+.content-panel-hm {
+    margin-bottom: 35px;
+    margin-top: -30px;
+    margin-top: 200px;
+}
+
+.content-panel-pr {
     margin-bottom: 35px;
     margin-top: -30px;
 }
@@ -558,14 +644,6 @@ input.form-control {
     overflow: hidden;
 }
 
-.form-controller {
-    background: rgba(255,141, 0, 0.9);
-}
-
-.form-control {
-    background: white;
-    border: transparent;
-}
 
 
 
@@ -726,7 +804,11 @@ a:link    {
 }
  
 .Fnd-bg {
-     background-color: rgba(255,219,153,1);
+     background-color: rgba(255,219,153, 1);
+     margin-left: 0px;
+     max-width: 670px;
+     min-width: 670px;
+     margin-top: -30px;
 }
 
 .icon-group-top {
@@ -735,6 +817,7 @@ a:link    {
     display: flex;
     margin-right: 0 auto;
     margin-left: 0 auto;
+    margin-bottom: 5px;
 }
 
 .icon-group-sub {
@@ -955,7 +1038,8 @@ a:link    {
 }
 
 .panel-content {
-    max-width: 900px ;
+    max-width: 900px;
+    min-width: 900px;
     overflow: hidden;
 }
 

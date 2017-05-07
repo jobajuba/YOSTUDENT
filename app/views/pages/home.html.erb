@@ -75,10 +75,13 @@
     <!-- Center Panel begins here, -->
     <div class="col-xs-6 mid-col panel-center">
         
-        <%= render '/components/post_form' %><br>       
+        <div>
+            <%= render '/components/post_form' %>
+        </div>
+        
         <% for @p in @posts %>
             
-            <div class="panel panel-default content-panel">
+            <div class="panel panel-default content-panel-hm">
                 <div class="panel-body">       
                     <div class="col-sm-1 user-avatar-title">
                         <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
