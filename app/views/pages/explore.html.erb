@@ -1,44 +1,94 @@
-<div class="container content-ex">
-    <div class="row">
-    <% for @p in @posts %>
-    
-        <div class="panel">
-            <div class="panel-body content-containter-ex">
-                <section id="">
-                    <article class="">
-                        <%= @p.content %>
-                    </article>
-                </section>
-            </div>
-            <br>
-            <div class="description" style="background: #595959">
-                Discription    
-            </div>
-            <br>        
-            <div class="tags" style="background: #808080">
-                tags
-            </div>
-            <br>
-            <div class="post-links-explore" style="background: #B2B2B2">
-                <span class="explore-icon">
-                    <i class="fa fa-reply" aria-hidden="true"></i>
-                </span>
-                                                    
-                <span class="explore-icon">
-                    <i class="fa fa-heart-o reply-ex" aria-hidden="true"></i>
-                </span>
-                                                    
-                <span class="explore-icon">
-                    <i class="fa fa-retweet" aria-hidden="true"></i>
-                </span>
-                                                    
-                <span class="explore-icon">
-                    <i class="fa fa-trash-o reply-ex" aria-hidden="true"></i>
-                </span>
+<div class="row container-fluid prof-row">
+    <div class="col-xs-3 ">
+        <div class="panel panel-default panel-top ">
+            <div class="panel-body ">
+                <p>
+                    <div class="col-sm-1" >
+                        <img class="user-avatar-home" src="/icon.png"></img>
+                    </div><br>
+                
+                    <div class="col-sm-2 user-name-home"> 
+                        <a class="" accesskey="" data-gt="" href="/user/<%= current_user.username %>" title="" data-testid="" ><img class="" src="" alt="" id="">
+                            <span style="color: black;"><%= current_user.username %></span>
+                        </a>
+                    </div>
+                    
+                     
+                
+                    <div class="act-tab">
+                        
+                        Create a div to contain followers text with max and min width
+                        
+                        <ol class="breadcrumb">
+                        <li class="active">
+                        <a href="#">
+                        <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                        <i class="fa fa-hand-o-right" aria-hidden="true"> 
+                        <span style="color: grey;">Followers </span>
+                        <span class="no-fol"> No.  </span>
+                        </i>
+                        </span>
+                        </a>
+                        </li>
+                        
+                        </ol>  
+                    </div>
+                
             </div>
         </div>
-    <% end %>
     </div>
+
+    <!-- Center Panel begins here, -->
+    <div class="col-xs-6 mid-col panel-center">
+        
+        <div>
+            <%= render '/components/post_form' %>
+        </div>
+        
+        <% for @p in @posts %>
+            
+            <div class="panel panel-default content-panel-hm">
+                <div class="panel-body">       
+                    <div class="col-sm-1 user-avatar-title">
+                        <img class="img-rounded user-avatar-profile" src="/icon.png"></img> 
+                    </div>
+                    
+                    <div class="col-sm-10">
+                        <div class="post-title">
+                            <a class="" accesskey="" data-gt="" href="/user/<%= User.find(@p.user_id).username %>" title="" data-testid="" >
+                                <span class="post-owner-profile"><%= User.find(@p.user_id).username %></span>  
+                                <span class="post-date">@<%= @p.created_at.to_formatted_s(:short) %></span>
+                            </a>
+                        </div>
+                        <div class="content-container-profile">
+                            <span class="post-content-profile container"><%= @p.content %></span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12">
+                        <div class="post-links">
+                            <span class="reply-icon">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                <span class="reply-text">Comment</span>
+                            </span>
+                                
+                            <span class="like-icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span class="like-text">Like</span>
+                            </span>
+                            
+                            <span class="share-icon">
+                                <i class="fa fa-retweet" aria-hidden="true"></i>
+                                <span class="share-text">Share</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        <% end %>
+    </div>
+    
+    
+    
 </div>
 
-                      

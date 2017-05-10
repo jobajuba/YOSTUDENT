@@ -239,16 +239,9 @@ li.db1:hover > ul.dropdown-menu{
 
 
 
-
-
-
-
-
-
-
 .form-control { 
-    max-width: 580px;
-    min-width: 580px;
+    max-width: 480px;
+    min-width: 480px;
     background: rgba(255,141, 0, 0.9) solid;
     border-color: none;
     border-color: rgba(127,127,127,0.3);
@@ -263,8 +256,8 @@ li.db1:hover > ul.dropdown-menu{
 }
 
 .form-transform-active {
-    max-width: 580px;
-    min-width: 580px;
+    max-width: 480px;
+    min-width: 480px;
     height: 70px;
     background: rgba(255,141, 0, 0.9) solid;
     border-color: none;
@@ -336,8 +329,18 @@ li.db1:hover > ul.dropdown-menu{
     color: #0c5393;
 }
 
+.user-pro-av {
+    margin-top: -150px;
+    background: none;
+}
 
-
+.this-user-avatar {
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    margin-left: -20px;
+    margin-top: -3px;
+}
 
 
 
@@ -360,23 +363,21 @@ li.db1:hover > ul.dropdown-menu{
 }
 
 .panel-top {
-    max-width: 500px;
-    min-width: 500px;
-    margin-left: -200px;
-    position: fixed;
+    max-width: 450px;
+    min-width: 450px;
+    margin-left: -290px;
 }
 
 
 .panel-center {
-    width: 700px;
-    margin-left: 280px;
+    width: 600px;
+    margin-left: -90px;
 }
 
 .panel-bottom {
-    max-width: 370px;
-    min-width: 370px;
-    margin-left: 960px;
-    position: fixed;
+    max-width: 350px;
+    min-width: 350px;
+    margin-left: -21px;
 }
 
 .post-title {
@@ -452,7 +453,7 @@ li.db1:hover > ul.dropdown-menu{
     margin-left: -15px;
     margin-top: -13px;
     text-align: justify;
-    width: 536px;
+    width: 470px;
 }
 
 .post-tags {
@@ -618,14 +619,13 @@ li.db1:hover > ul.dropdown-menu{
 }
 
 .content-panel-hm {
-    margin-bottom: 35px;
-    margin-top: -30px;
-    margin-top: 200px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .content-panel-pr {
     margin-bottom: 35px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .tips-btn {
@@ -770,7 +770,7 @@ a:link    {
 .Profile-BG:Hover {
     width: 100%;
     opacity: 0.9;
-    height: 500px;
+    min-height: 500px;
     position: center;
     margin-bottom: -10%;
     margin-top: -21px;
@@ -806,9 +806,10 @@ a:link    {
 .Fnd-bg {
      background-color: rgba(255,219,153, 1);
      margin-left: 0px;
-     max-width: 670px;
-     min-width: 670px;
+     max-width: 570px;
+     min-width: 570px;
      margin-top: -30px;
+     margin-bottom: 10px;
 }
 
 .icon-group-top {
@@ -1060,9 +1061,30 @@ a:link    {
 
 .prof-row {
     margin-top: 35px;
+    vertical-align: middle;
 }
 
+.prof-row-pr {
+    margin-top: -11px;
+}
 
+.content-bar-pr {
+    margin-top: 180px;
+}
+
+.this-show {
+    margin-left: 200px;
+}
+
+.this-profile-show {
+    position: center;
+    margin-left: -21px;
+    margin-right: -21px;
+}
+
+.this-sub-info {
+    
+}
 
 //Explore Page CSS
 
@@ -1129,6 +1151,14 @@ a:link    {
 
 .this-sticky-content {
 }
+
+
+.personal-banner {
+    
+}
+
+
+
 
 
 
