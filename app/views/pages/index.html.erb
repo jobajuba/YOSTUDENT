@@ -1,23 +1,11 @@
 <% if !user_signed_in? # if the user is not signed in, render this %>
+    
     <style>
-        body {
-            background: linear-gradient(
-                        rgba(10,10,10,0.7),
-                        rgba(10,10,10,10.7),
-                        margin: 0;
-            ) 
-            
-            background: url(/office.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover; /* For WebKit*/
-            -moz-background-size: cover;    /* Mozilla*/
-            -o-background-size: cover;      /* Opera*/
-            background-size: contain;
-        }
-        
-       
     </style>
     
+    
    
+    
     
 <% else #if the user is signed in, render the following HTML %>
 <script>document.location = "/home"</script>
