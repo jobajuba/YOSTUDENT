@@ -51,19 +51,17 @@
     margin-top: 10px;
     margin-left: -100px;
     width: 125%;
-    background: transparent;
 }
 
 //Sign-up button index
 .navbar-btn-signup {
     margin-top: 10px;
     margin-left: 5px;
-    width: 125%;
-    background: rgba(255,165,0,0.5);
+    width: 125%;color: rgba(255,141, 0, 0.8);
 }
 
 .navbar-btn-signup:hover {
-    background: rgba(255,165,0,0.8);
+    color: rgba(255,141, 0, 1);
 }
 
 
@@ -77,7 +75,7 @@
 
 
 body{
-    background-color:  rgba(249, 249, 249, 1);
+    background-color:  rgba(239, 239, 239, 1);
     position: center;
 }
 
@@ -258,20 +256,16 @@ li.db1:hover > ul.dropdown-menu{
 .form-transform-active {
     max-width: 480px;
     min-width: 480px;
-    height: 70px;
+    height: 100px;
     background: rgba(255,141, 0, 0.9) solid;
     border-color: none;
     border-color: rgba(127,127,127,0.3);
-    
 }
 
 
-
-.post-action{
+.post-action {
     visibility: hidden;
 }
-
-
 
 
 
@@ -312,7 +306,7 @@ li.db1:hover > ul.dropdown-menu{
 .magic_brand-guest {
     font-size: 20pt;
     font-weight: bold;
-    color: rgba(255,141, 0, 1);
+    color: rgba(255,141, 0, 0.8);
     margin-top: 5px;
 }
 
@@ -326,7 +320,7 @@ li.db1:hover > ul.dropdown-menu{
 }
 
 .magic_brand-guest:hover{
-    color: #0c5393;
+    color: rgba(255,141, 0, 1);
 }
 
 .user-pro-av {
@@ -764,7 +758,6 @@ a:link    {
     height: 500px;
     margin-bottom: -10%;
     margin-top: -21px;
-    position: center;
 }
 
 .Profile-BG:Hover {
@@ -873,7 +866,7 @@ a:link    {
 .btn-submit {
     background: rgba(59,89,152,1);
     border: none;
-    color: white
+    color: white;
 }
 
 //Post form icons
@@ -1073,7 +1066,7 @@ a:link    {
 }
 
 .this-show {
-    margin-left: 200px;
+    margin-left: 330px;
 }
 
 .this-profile-show {
@@ -1083,7 +1076,7 @@ a:link    {
 }
 
 .this-sub-info {
-    
+    margin-left: 20px;
 }
 
 //Explore Page CSS

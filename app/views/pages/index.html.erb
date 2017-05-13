@@ -1,7 +1,574 @@
 <% if !user_signed_in? # if the user is not signed in, render this %>
     
+    <aside class="profile-card">
+      
+      <header>
+        
+        <!-- here’s the avatar -->
+        <a target="_blank" href="http://twitter.com/xxdionxx">
+          <img src="https://www.dropbox.com/s/9upq789hxnhs361/ava.gif?raw=1">
+        </a>
+    
+        <!-- the username -->
+        <h1>Dion Pramadhan</h1>
+        
+        <!-- and role or location -->
+        <h2>Product Designer</h2>
+        
+      </header>
+      
+      <!-- bit of a bio; who are you? -->
+      <div class="profile-bio">
+        
+        <p>I’m half unicorn and half biscuits. I design <b>ui + ux</b>, i code the <b>frontend</b>, and i love
+    <b>motion design</b></p>
+        
+      </div>
+      
+      <!-- some social links to show off -->
+      <ul class="profile-social-links">
+        
+        <!-- twitter - el clásico  -->
+        <li>
+          <a target="_blank" href="http://twitter.com/xxdionxx">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        
+        <!-- envato – use this one to link to your marketplace profile -->
+        <li>
+          <a target="_blank" href="https://dribbble.com/xdionx">
+            <i class="fa fa-dribbble"></i>
+          </a>
+        </li>
+        
+        <!-- codepen - your codepen profile-->
+        <li>
+          <a target="_blank" href="http://codepen.io/xdionx/">
+            <i class="fa fa-codepen"></i>
+          </a>
+        </li>
+        
+        <!-- add or remove social profiles as you see fit -->
+        
+      </ul>
+      
+    </aside>
+    <!-- that’s all folks! -->
+    
     <style>
+     
+      body {
+      	margin: 0;
+      	font-family: 'Roboto', sans-serif;
+      	position: relative;
+      	&:before {
+      		content: '';
+      		position: fixed;
+      		display: inherit;
+      		background-color: #29d08a;
+      		width: 2500px;
+      		height: 2500px;
+      		top: 0;
+      		border-radius: 50%;
+      		left: 50%;
+      		margin-left: -1250px;
+      		top: 50%;
+      		margin-top: -1200px;
+      		@include animation(closeBody 1s ease forwards 1s);
+      	}
+      }
+      // color control
+      $green: #29d08a; 
+      $white: #fff;
+      $black: #000;
+      $silver: #e6eef1;
+      $slate: #4e5b6b;
+      
+      body {
+        background-color: $silver;
+        @include transform(translateZ(0));
+      }
+      
+      aside {
+      	text-align: center;
+      	display: block;
+      	background-color: $green;
+      	width: 284px;
+      	height: 380px;
+      	margin: auto;
+      	border: solid 10px $white;
+      	box-shadow: 0 0 10px transparentize($black, .8);
+      	position: relative;
+      	margin-top: 150px;
+      	@include animation(showAside .25s ease forwards 2s);
+      	opacity: 0;
+      	header {
+      
+      	}
+      	&:hover, &:focus {
+      		margin-top: 100px;
+      		height: 530px;
+      		box-shadow: 0 0 25px transparentize($black, .8);
+      
+      		.profile-bio {
+      			// top: -55px;
+      			// opacity: 1;
+      			// visibility: visible;
+      		}
+      		header {
+      			padding-top: 106px;
+      			h1 {
+      				top: 332px;
+      			}
+      			h2 {
+      				top: 390px;
+      			}
+      		}
+      		.profile-social-links {
+      			bottom: 0;
+      		}
+      	}
+      
+      }
+      header {
+      	padding: 74px 0 35px;
+      	width: 100px;
+      	margin: auto;
+      	a {
+      		display: inline-block;
+      		text-align: center;
+      		position: relative;
+      		width: 100px;
+      		height: 208px;
+      		// border-bottom: solid 3px rgba(0, 0, 0, 0.15);
+      		border-bottom: solid 3px darken($green, 5%);
+      		// opacity: 0;
+      		@include transform(translateY(30px));
+      		@include animation(showAva .5s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.75s);
+      		opacity: 0;
+      		img {
+      			width: 100px;
+      			height: auto;
+      			padding-bottom: 7px;
+      			position: absolute;
+      			left: 0;
+      			bottom: 4px;
+      			@include animation(movebody 1s ease infinite);
+      		}
+      		&:before, &:after {
+      			content: '';
+      			z-index: 5;
+      		}
+      		&:before {
+      			width: 17px;
+      			height: 40px;
+      			display: inline-block;
+      			background-color: #373737;
+      			background-image: linear-gradient(transparent 50%,rgba(255, 255, 255, 0.2)50%);
+      			background-size: 20px 5px;
+      			position: absolute;
+      			bottom: 0px;
+      			left: 0;
+      			right: 0;
+      			margin: auto;
+      			border-radius: 4px;
+      			@include animation(tire .8s linear infinite);
+      		}
+      		&:after {
+      			width: 28px;
+      			height: 32px;
+      			background-color: #DEE2EA;
+      			display: inline-block;
+      			position: absolute;
+      			bottom: 16px;
+      			left: 0;
+      			right: 0;
+      			margin: auto;
+      			border-radius: 10px 10px 0 0;
+      		}
+      		&:hover {
+      			@include transform(scale(1.05));
+      		}
+      	}
+      	h1, h2 {
+      		position: absolute;
+      		background-color: $slate;
+      		z-index: 20;
+      		left: 50%;
+      		right: 50%;
+      	}
+      	h1 {
+      		color: $white;
+      		height: 50px;
+      		top: 300px;
+      		text-align: center;
+      		font-size: 24px;
+      		padding: 20px 0 0;
+      		font-weight: 500;
+      		color: transparent;
+      		@include animation(showTitle .25s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.25s, showTitle-1 .5s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.75s);
+      		&:after, &:before {
+      			content: '';
+      			height: 0;
+      			width: 0;
+      			top: -20px;
+      			display: inline-block;
+      			position: absolute;
+      			@include transform(scaleY(0));
+      			@include transform-origin(center bottom);
+      			@include animation(showTips .25s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.5s);
+      		}
+      		&:before {
+      			border-left: solid 15px transparent;
+      			border-right: solid 15px darken($slate, 5%);
+      			border-bottom: solid 10px darken($slate, 5%);
+      			border-top: solid 10px transparent;
+      			left: 0;
+      		}
+      		&:after {
+      			border-right: solid 15px transparent;
+      			border-left: solid 15px darken($slate, 5%);
+      			border-bottom: solid 10px darken($slate, 5%);
+      			border-top: solid 10px transparent;
+      			right: 0;	
+      		}
+      	}
+      	h2 {
+      		color: lighten($slate, 15%);
+      		height: 40px;
+      		top: 358px;
+      		text-align: center;
+      		font-size: 14px;
+      		font-weight: 500;
+      		color: transparent;
+      		@include animation(showTitle .25s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.25s, showTitle-2 .5s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 3s);
+      	}
+      	&:hover {
+      		~ .profile-bio {
+      			top: -55px;
+      			opacity: 1;
+      			visibility: visible;
+      		}
+      	}
+      }
+      .profile-bio {
+      	  position: absolute;
+      	  top: -55px;
+      	  background-color: #fff;
+      	  border-radius: 50%;
+      	  padding: 30px;
+      	  text-align: center;
+      	  font-size: 14px;
+      	  left: -110px;
+      	  width: 230px;
+      	  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      	  top: 0;
+      	  opacity: 0;
+      	  visibility: hidden;
+      	  &:after {
+      	  	content: '';
+      		height: 0;
+      		width: 0;
+      		display: inline-block;
+      		position: absolute;
+      		border-left: solid 10px transparent;
+      		border-right: solid 10px $white;
+      		border-bottom: solid 15px transparent;
+      		border-top: solid 15px $white;
+      		right: 30px;
+      		@include transform(rotate(-25deg));
+      	  }
+      	p {
+      		color: $slate;
+      	}
+      }
+      .profile-social-links {
+      	list-style: none;
+      	position: absolute;
+      	padding: 0;
+      	bottom: -10px;
+      	left: 0;
+      	right: 0;
+      	text-align: center;
+      	opacity: 0;
+      	@include animation(showSoc .25s cubic-bezier(0.37, 0.15, 0.54, 1.99) forwards 2.5s);
+      	li {
+      		display: inline-block;
+      		a {
+      			display: inline-block;
+      			padding: 10px;
+      			i {
+      				&:before {
+      					color: darken($green, 10%);
+      					font-size: 20px;
+      				}	
+      			}
+      			&:hover {
+      				i {
+      					&:before {
+      						color: darken($green, 15%);
+      					}
+      				}
+      			}
+      		}
+      	}
+      }
+      @include keyframes(movebody)
+      {
+      	0%{bottom: 5px;}
+          25%{bottom: 4px;}
+          50%{bottom: 5px;}
+          75%{bottom: 4px;}
+          100%{bottom: 5px;}
+      }
+      @include keyframes(tire)
+      {
+      	from {  
+              background-position: center top; 
+          }  
+          to {  
+              background-position: center bottom;  
+          }  
+      }
+      @include keyframes(showAside)
+      {
+      	0% {
+      		border-width: 0;
+      		opacity: 0;
+      	}
+      	1% {
+      		opacity: 1;
+      	}
+      	100% {
+      		border-width: 10px;
+      		opacity: 1;
+      	}
+      }
+      @include keyframes(showTitle) {
+      	0% {
+      		left: 50%;
+      		right: 50%;
+      	}
+      	100% {
+      		left: -40px;
+      		right: -40px;
+      	}
+      }
+      @include keyframes(showTitle-1) {
+      	0% {
+      		padding-top: 25px;
+      		color: transparent;
+      	}
+      	100% {
+      		padding-top: 20px;
+      		color: $white;
+      	}
+      }
+      @include keyframes(showTitle-2) {
+      	0% {
+      		padding-top: 5px;
+      		color: transparent;
+      	}
+      	100% {
+      		padding-top: 0px;
+      		color: lighten($slate, 20%);
+      	}
+      }
+      @include keyframes(showTips) {
+      	0% {
+      		@include transform(scaleY(0));
+      	}
+      	100% {
+      		@include transform(scaleY(1));
+      	}
+      }
+      @include keyframes(showAva) {
+      	0% {
+      		@include transform(translateY(30px));
+      		opacity: 0;
+      	}
+      	100% {
+      		@include transform(translateY(0));
+      		opacity: 1;
+      	}
+      }
+      @include keyframes(showSoc) {
+      	0% {
+      		opacity: 0;
+      	}
+      	100% {
+      		opacity: 1;
+      	}
+      }
+      @include keyframes(closeBody)
+      {
+      	0% {
+      		width: 2500px;
+      		height: 2500px;
+      		border-radius: 50%;
+      		left: 50%;
+      		margin-left: -1250px;
+      		top: 50%;
+      		margin-top: -1200px;
+      		right: auto;
+      	}
+      	50% {
+      		border-radius: 50%;
+      		width: 20px;
+      		height: 20px;
+      		left: 0;
+      		margin-left: auto;
+      		margin-right: auto;
+      		right: 0;
+      		top: 200px;
+      	}
+      	100% {
+      		width: 284px;
+      		height: 380px;
+      		border-radius: 0;
+      		left: 0;
+      		right: 0;
+      		margin: auto;
+      		top: -150px;
+      		margin-top: 150px;
+      		
+      	}
+      }
+      
     </style>
+    
+    
+    
+    <canvas id=c></canvas>
+    
+    <style>
+      body {
+      	margin: 0;
+      	background: rgba(35,82,119,1);
+      	overflow: hidden;
+      }
+
+      canvas {
+      	width:100vw;
+      	height: 100vh
+      }
+    </style>
+    
+    <script>
+      var c = document.querySelector('#c')
+      var ctx = c.getContext('2d')
+      var dots = []
+      var ratio = window.devicePixelRatio || 1
+      
+      
+      var options = {
+      	size: 10,
+      	spawnRate: 3,
+      	rotation: 23,
+      	spawnRotationSpeed: 23,
+      	dotRotationSpeed: -0.2,
+      	moveSpeed: 2,
+      	shrinkTime: 5,
+      	clear: true
+      }
+      
+      var colors = [
+      	'#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5', '#2196F3',
+      	'#03A9F4', '#00BCD4', '#009688', '#4CAF50', '#8BC34A', '#CDDC39',
+      	'#FFEB3B', '#FFC107', '#FF9800', '#FF5722'
+      ]
+      var cc = 0
+      
+      // r( max, min, decimal places)
+      function r(a,b,c){ return parseFloat((Math.random()*((a?a:1)-(b?b:0))+(b?b:0)).toFixed(c?c:0)); }
+      
+      window.addEventListener('resize', function() {
+      	c.width = window.innerWidth * ratio
+      	c.height = window.innerHeight * ratio
+      })
+      window.dispatchEvent(new Event('resize'))
+      
+      function render() {
+      	if(options.clear) {
+      		ctx.clearRect(0, 0, c.width, c.height)
+      	} else {
+      		ctx.fillStyle = 'rgba(0, 0, 0, 0.1)'
+      		ctx.fillRect(0, 0, c.width, c.height)
+      	}
+      
+      	for(var i=0; i<options.spawnRate; i++) {
+      		options.rotation = options.rotation < 360 ? options.rotation + options.spawnRotationSpeed : options.rotation - 360 + options.spawnRotationSpeed
+      		cc = cc < colors.length - 1 ? cc + 1 : 0
+      
+      		var dot = {
+      			rotation: options.rotation,
+      			x: c.width / 2,
+      			y: c.height / 2,
+      			size: options.size,
+      			color: colors[cc]
+      		}
+      
+      		TweenMax.to(dot, options.shrinkTime, {size: 0})
+      
+      		dots.push(dot)
+      	}
+      
+      	dots.forEach(function(dot, i) {
+      
+      		var d = {
+      			x: options.moveSpeed * Math.cos(dot.rotation * Math.PI / 180),
+      			y: options.moveSpeed * Math.sin(dot.rotation * Math.PI / 180)
+      		}
+      
+      		dot.x += d.x
+      		dot.y += d.y
+      
+      		dot.rotation += options.dotRotationSpeed
+      
+      		// dot.size *= options.shrinkSpeed
+      
+      		if(dot.size < 0.5) {
+      			dots.splice(i, 1)
+      
+      			return
+      		}
+      
+      		ctx.fillStyle = dot.color
+      		ctx.beginPath()
+      		ctx.arc(dot.x, dot.y, dot.size * ratio, 0, 2 * Math.PI, false)
+      		ctx.fill()
+      	})
+      }
+      
+      ;(function renderLoop() {
+      	requestAnimationFrame(renderLoop)
+      	render()
+      })()
+      
+      
+      var datGUI = new dat.GUI()
+      
+      datGUI.add(options, 'size').min(1).max(20).step(1).name('Size').listen().onChange(function(val){ options.size = val })
+      datGUI.add(options, 'spawnRate').min(1).max(5).step(1).name('Spawn Rate').listen().onChange(function(val){ options.spawnRate = val })
+      datGUI.add(options, 'spawnRotationSpeed').min(0).max(50).step(1).name('Spawn Rotation').listen().onChange(function(val){ options.spawnRotationSpeed = val })
+      datGUI.add(options, 'dotRotationSpeed').min(-1).max(1).step(0.01).name('Dot Rotation').listen().onChange(function(val){ options.dotRotationSpeed = val })
+      datGUI.add(options, 'moveSpeed').min(1).max(5).step(1).name('Move Speed').listen().onChange(function(val){ options.moveSpeed = val })
+      datGUI.add(options, 'shrinkTime').min(0.1).max(20).step(0.1).name('Shrink Time (seconds)').listen().onChange(function(val){ options.shrinkTime = val })
+      
+      datGUI.add(options, 'clear', true, false).name('Clear').onChange(function(val){ options.clear = val })
+      
+      // $(gui.domElement).find(">ul").toggleClass("closed");
+      
+      datGUI.domElement.querySelector('ul').classList.toggle('closed')
+      
+      
+
+                
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5.1/dat.gui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
     
     
    
