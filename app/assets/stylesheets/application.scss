@@ -29,12 +29,14 @@
     z-index: 10;
     max-width: 100%;
     max-height: 5px;
+    border: 0;
 }
 
 .navbar-guest {
     background-color: transparent;
     height: 15%;
-    border: 0px;
+    border: 0;
+    
 }
 
 //Login modal
@@ -42,7 +44,6 @@
 //Sign up page
 .sign-up-bar {
 
-    
 }
 
 
@@ -75,7 +76,8 @@
 
 
 body{
-    background-color:  rgba(239, 239, 239, 1);
+    font-family: 'Open Sans', san-serif;
+    background-color: #235277;
     position: center;
 }
 
@@ -368,7 +370,18 @@ li.db1:hover > ul.dropdown-menu{
     margin-left: -90px;
 }
 
+.panel-center-pf {
+    width: 600px;
+    margin-left: 35px;
+}
+
 .panel-bottom {
+    max-width: 350px;
+    min-width: 350px;
+    margin-left: -21px;
+}
+
+.panel-bottom-pf {
     max-width: 350px;
     min-width: 350px;
     margin-left: -21px;
@@ -797,7 +810,6 @@ a:link    {
 }
  
 .Fnd-bg {
-     background-color: rgba(255,219,153, 1);
      margin-left: 0px;
      max-width: 570px;
      min-width: 570px;
@@ -1053,8 +1065,15 @@ a:link    {
 
 
 .prof-row {
-    margin-top: 35px;
+    margin-top: 40px;
     vertical-align: middle;
+}
+
+.prof-row-pf {
+    margin-top: -20px;
+    vertical-align: middle;
+    background-color: rgba(28,65,95,0.6);
+    margin-left: -15px;
 }
 
 .prof-row-pr {
@@ -1190,6 +1209,11 @@ body {
     text-shadow: 0 0 10px rgba(255,141, 0, 1); 
     letter-spacing:1px; 
     text-align:center; 
+}
+
+.actions {
+    color: rgba(255,141, 0, 1);
+    background-color: rgba(28,65,95,1);
 }
 
 input { 

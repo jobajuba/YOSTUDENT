@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'grav' => 'pages#grav'
   get 'activity' => 'pages#activity'
   get 'noti' => 'pages#noti'
+  get 'index' => 'pages#index'
   
   
   
