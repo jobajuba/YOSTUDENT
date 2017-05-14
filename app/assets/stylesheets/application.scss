@@ -1212,8 +1212,10 @@ body {
 }
 
 .actions {
-    color: rgba(255,141, 0, 1);
-    background-color: rgba(28,65,95,1);
+    color: rgba(255,255, 255, 1);
+    background-color: rgba(24,57,83,1);
+    border-color: rgba(28,65,95,1);
+    border-width: 2px;
 }
 
 input { 

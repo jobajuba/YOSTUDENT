@@ -6,13 +6,13 @@
     <h1 style="color: white;">Login</h1>   
   
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+      <%= f.label :email, :style => 'color: white;' %><br />
+      <%= f.email_field :email, :style => 'color: #191919; border-color: #153147; border-width: 1px; ', autofocus: true %>
     </div>
           
     <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
+      <%= f.label :password, :style => 'color: white;' %><br />
+      <%= f.password_field :password, :style => 'color: #191919; border-color: #153147; border-width: 1px; ', autocomplete: "off" %>
     </div>
           
     <div class="">

@@ -8,27 +8,27 @@
         <%= devise_error_messages! %>
         
         <div class="field">
-          <%= f.label :username %><br />
-          <%= f.text_field :username, autofocus:true %>
+          <%= f.label :username, :style => 'color: white;' %><br />
+          <%= f.text_field :username, :style => 'color: #191919; border-color: #153147; border-width: 1px; ', autofocus:true %>
         </div>
         
       
         <div class="field">
-          <%= f.label :email %><br />
-          <%= f.email_field :email%>
+          <%= f.label :email, :style => 'color: white;' %><br />
+          <%= f.email_field :email, :style => 'color: #191919; border-color: #153147; border-width: 1px; '%>
         </div>
       
         <div class="field">
-          <%= f.label :password %>
+          <%= f.label :password, :style => 'color: white;' %>
           <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <em style="color: white;">(<%= @minimum_password_length %> characters minimum)</em>
           <% end %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, :style => 'color: #191919; border-color: #153147; border-width: 1px; ', autocomplete: "off" %>
         </div>
       
         <div class="field">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          <%= f.label :password_confirmation, :style => 'color: white;' %><br />
+          <%= f.password_field :password_confirmation, :style => 'color: #191919; border-color: #153147; border-width: 1px; ', autocomplete: "off" %>
         </div>
       
         <div class="">

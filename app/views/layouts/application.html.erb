@@ -17,13 +17,7 @@
   <% if params[:id] != nil %>
   <% @url= '/user/' + params[:id] %>
   <% if current_page?(@url) %>
-    <!-- <canvas></canvas>
-    <div id="Profile">
-      <img src="https://s3-us-west-2.amazonaws.com/harriscarney/images/120x120.png"/>
-      <span><%= current_user.username %></span>
-    </div> -->
-    
-    
+  
     <div class="container con-profile">
       <div class="img-profile">
           <img align="left" class="image-lg" src="/bg.jpg" alt="profile cover"/>
@@ -35,6 +29,9 @@
       </div>
     </div>
     
+    <div>
+      
+    </div>
     
   <% end %>
   <% end %>  
@@ -54,9 +51,9 @@
       z-index: 0;
       width: 100%;
       margin-bottom: 10px;
-      border-width: 1px;
+      border-width: 5px;
       border-style: solid;
-      border-color: rgba(255,141, 0, 0.4);
+      border-color: rgba(255,141, 0, 1);
     }
     
     .image-profile{
