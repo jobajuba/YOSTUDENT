@@ -16,21 +16,18 @@
                      
                 
                     <div class="act-tab">
-                        
-                        Create a div to contain followers text with max and min width
-                        
                         <ol class="breadcrumb">
-                        <li class="active">
-                        <a href="#">
-                        <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
-                        <i class="fa fa-hand-o-right" aria-hidden="true"> 
-                        <span style="color: grey;">Followers </span>
-                        <span class="no-fol"> No.  </span>
-                        </i>
-                        </span>
-                        </a>
-                        </li>
-                        
+                            <li class="active">
+                                <a href="#">
+                                    <span style="color: #66cdaa; font-size: 10pt" data-toggle="tooltip" data-placement="bottom" title="Followers">
+                                        <i class="fa fa-hand-o-right" aria-hidden="true"> 
+                                            <span style="color: grey;">Followers </span>
+                                            <br>
+                                            <span class="no-fol"> <%= current_user.followers.count %>  </span>
+                                        </i>
+                                    </span>
+                                </a>
+                            </li>
                         </ol>  
                     </div>
                 

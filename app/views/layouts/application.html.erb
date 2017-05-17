@@ -22,20 +22,58 @@
       <div class="img-profile">
           <img align="left" class="image-lg" src="/bg.jpg" alt="profile cover"/>
           <img align="left" class="image-profile thumbnail" src="/icon.png" alt="profile image"/>
-        <div class="profile-description">
-          <h1 style="color: rgba(255, 255, 255, 1);"> <%= current_user.username %></h1>
+        <div class="stats">
+          <h1 style="color: rgba(255, 255, 255, 1);"> <%= User.find(@p.user_id).username %></h1>
           <h4 style="color: rgba(255, 255, 255, 1);"> Speciality</h4>
+         
+          <ul class="follower-container">
+            <li class="follower">
+              <a href="stat">
+                <span class="folower-count" style="color: rgba(128,128,128,1);"> Followers <br/> <%= current_user.followers.count %>  </span>
+              </a>
+            </li>
+            <li class="follower">
+              <a href="">
+                <span class="folower-count" style="color: rgba(128,128,128,1) ;"> Following <br/>  0  </span>
+              </a>
+            </li>
+            
+            <li class="follower">
+              <a href="">
+                <span class="folower-count" style="color: rgba(128,128,128,1); "> Collaborates <br/> 0  </span>
+              </a>
+            </li>
+            
+            <li class="follower">
+              <a href="">
+                <span class="folower-count" style="color: rgba(128,128,128,1); "> Sponsors <br/> 0  </span>
+              </a>
+            </li>
+            
+            <li class="follower">
+              <a href="">
+                <span class="folower-count" style="color: rgba(128,128,128,1); "> Partners <br/> 0 </span>
+              </a>
+            </li>
+            
+            <li class="follower">
+              <a href="">
+                <% render '/components/follow_button', :user => User.find_by_username(params[:id]) %>
+              </a>
+            </li>
+          </ul>
+          
+          
+          
+             
         </div>
       </div>
+      
+      
+      
     </div>
     
-    <div>
-      <div>
-        <span>
-          
-        </span>
-      </div>
-    </div>
+   
     
   <% end %>
   <% end %>  
@@ -47,6 +85,37 @@
   </div>
   
   <style>
+  
+  .follower {
+    color: rgba(255,141, 0, 1);
+    float: left;
+    margin-left: -30px;
+  }
+  
+  .follower-count {
+    font-size: 300%;
+  }
+  
+  .follower-container {
+    max-width: 560px;
+    min-width: 560px;
+    max-height: 59px;
+    min-height: 59px;
+    background-color: white;
+    margin-left: 285px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  
+  .follower, .stat {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: -5px;
+  }
     .con-profile {
       background-color: rgba(28,65,95,0.6);
     }

@@ -1049,9 +1049,7 @@ a:link    {
     overflow: hidden;
 }
 
-.no-fol {
-    margin-left: 300px;
-}
+
 
 //Modal
 .custom-modal {
@@ -1171,9 +1169,7 @@ a:link    {
 
 
 
-
-
-
+//Followers, following, sponsors, collabotations counter
 
 
 
@@ -1240,4 +1236,19 @@ input {
 
 input:focus { 
     box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
+}
+
+
+
+//Application.html.erb User image and cover
+.stats {
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 100px;
+    min-height: 100px;
+    background-color: white;
+}
+
+.follower-count {
+    text-align: center;
 }
