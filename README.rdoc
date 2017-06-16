@@ -5,10 +5,10 @@ YOSTUDENT is concerned with creating a strategic approach intended to simplify l
 This platform will serve as a communication medium for users around the world to connect, share information and collaborate on projects, ventures and assignments. It will feature the use of profiles which user can showcase personal information and projects in a proficient manner. The platform will provide tools users can use during assignments, collaboration with other users or on personal projects and developments. 
   •	Game based learning in 2D and 3D. 
   •	Student cantered approach which encourages the creation and exchange of user generated content.
-  •	Information received by users on their timelines is determined by their areas of study or interest. For example, computing students     will have IT related information directed at them and Art enthusiasts will receive information relative to creativeness. This system     will not restrict users’ from accessing all information in the database.  
+  •	Information received by users on their timelines is determined by their areas of study or interest. For example, computing students will have IT related information directed at them and Art enthusiasts will receive information relative to creativeness. This system will not restrict users’ from accessing all information in the database.  
   •	Information will be directed to users based on their comprehensive abilities.
   •	The platform will allow for paid or sponsored tutoring, where users can form or join tutoring groups.
-  •	Users can endorse uploaded information or collaborate with other user in such process. All users will be held accountable for           information they choose to upload and how that information is referenced.  This will lay the foundation for an Information               Verification System.
+  •	Users can endorse uploaded information or collaborate with other user in such process. All users will be held accountable for information they choose to upload and how that information is referenced.  This will lay the foundation for an Information Verification System.
   •	Users will have access to a databank filled with educational resources from innumerable points of view. 
 
 
