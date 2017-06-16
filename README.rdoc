@@ -1,5 +1,20 @@
 NOTE: I am building a Virtual Learning Platform. All are welcome to contribute in this repository. Feel free to use this code for your own site. Every little contribution counts. 
 
+Concept == YOSTUDENT is a global learning platform that will offer a more consistent approach to learning and sharing resources. The platform will be equipped with educational tools designed to assist users with creation and exchange of user generated content. The platform combines social networking tools with virtual learning tools, coupled with innovative developed tools to provide the perfect learning platform. 
+The concept is essentially a platform the combines the useful aspects of Facebook, Google, Blackboard and Wikipedia to form the perfect virtual learning environment. The platform will also will function as a console in which people from various locations in the world and create and build ideas through collaboration and support each other through elevation. 
+YOSTUDENT is concerned with creating a strategic approach intended to simplify learning for all users and as well as overcoming the exclusion of basic human rights to education in developing countries, in all levels of comprehension, globely, with enhanced accessibility. In so doing, we will be setting the foundation for the altimate information verification system. 
+
+This platform will serve as a communication medium for users around the world to connect, share information and collaborate on projects, ventures and assignments. It will feature the use of profiles which user can showcase personal information and projects in a proficient manner. The platform will provide tools users can use during assignments, collaboration with other users or on personal projects and developments. 
+  •	Game based learning in 2D and 3D. 
+  •	Student cantered approach which encourages the creation and exchange of user generated content.
+  •	Information received by users on their timelines is determined by their areas of study or interest. For example, computing students     will have IT related information directed at them and Art enthusiasts will receive information relative to creativeness. This system     will not restrict users’ from accessing all information in the database.  
+  •	Information will be directed to users based on their comprehensive abilities.
+  •	The platform will allow for paid or sponsored tutoring, where users can form or join tutoring groups.
+  •	Users can endorse uploaded information or collaborate with other user in such process. All users will be held accountable for           information they choose to upload and how that information is referenced.  This will lay the foundation for an Information               Verification System.
+  •	Users will have access to a databank filled with educational resources from innumerable points of view. 
+
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
@@ -24,7 +39,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
