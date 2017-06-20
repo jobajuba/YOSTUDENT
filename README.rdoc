@@ -12,31 +12,29 @@ This platform will serve as a communication medium for users around the world to
   •	Users will have access to a databank filled with educational resources from innumerable points of view. 
 
 
+Getting Started.. 
 
-== README
+You'll need to install all the gem files before you can create a profile and use the site. Fork this repository and clone it on cloud9 or your IDE of choice and run "bundle install" on your console. This will install all the gem files. Then run the application. 
+
+Commit to master repository..
+git add -A (This bundles new, modified and deleted files/code ready for commit to your master)
+git commit -m "Description of my change" 
+git status (Check if there are files not commited)
+git push origin master (Save all changes to your github repository)
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-
 * Ruby version
-
 * System dependencies
-
 * Configuration
-
 * Database creation
-
 * Database initialization
-
 * How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
 * ...
-
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
