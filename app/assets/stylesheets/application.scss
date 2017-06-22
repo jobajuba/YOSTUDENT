@@ -22,7 +22,11 @@
 }
 
 .navbar {
-    background-color: rgba(255,141, 0, 1);
+    //background-color: rgba(255,141, 0, 1);
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     border-radius: 0px !important;
     position: fixed;
@@ -79,8 +83,7 @@ body{
     font-family: 'Open Sans', san-serif;
     background-color: #235277;
     position: center;
-    
-   
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width:576px) {
@@ -218,7 +221,7 @@ body{
 //Navbar Search
 
 .post-container {
-    
+    margin-top: 10px;
 }
 
 .post-box {
@@ -1093,7 +1096,7 @@ a:link    {
 .prof-row-pf {
     margin-top: -20px;
     vertical-align: middle;
-    background-color: rgba(28,65,95,0.6);
+    background-color: rgba(28,65,95,0.2);
     margin-left: -15px;
 }
 
