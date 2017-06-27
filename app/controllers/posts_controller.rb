@@ -9,9 +9,9 @@ class PostsController < ApplicationController
         @post.user_id = current_user.id
         respond_to do |format|
             if (@post.save)
-                format.html {redirect_to "", notice: "Post created!"}
+                format.html {redirect_to :back}
             else
-                format.html {redirect_to "", notice: "Error: Post Not Saved."}
+                format.html {redirect_to :back}
             end
         end
     end 

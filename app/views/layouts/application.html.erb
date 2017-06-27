@@ -126,7 +126,9 @@
       margin-bottom: 10px;
       border-width: 5px;
       border-style: solid;
-      border-color: rgba(255,141, 0, 0.3);
+      border-color: #f46b45;  /* fallback for old browsers */
+      border-color: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+      border-color: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     
     .image-profile{
